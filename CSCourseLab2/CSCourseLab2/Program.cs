@@ -12,8 +12,6 @@ namespace TrueCourseLab2
             return stringFromConsole;
         }
         
-        
-        //3
         static byte findAmountOfRepeatingStringInAnotherString(string firstString, string secondString)
         {
             byte counterForSymbls;
@@ -41,13 +39,11 @@ namespace TrueCourseLab2
             return amountOfRepeats;
         }
         
-        //1
         static bool checkIfStringContainsEverySymbolOfAnotherString(ref string firstString, ref string secondString)
         {
             StringBuilder firstStringArray = new StringBuilder(firstString);
             StringBuilder secondStringArray = new StringBuilder(secondString);
             
-            //--
             for (byte i = 0; i < firstStringArray.Length; i++)
             {
                 for (byte j = 0; j < secondStringArray.Length; j++)
@@ -82,8 +78,7 @@ namespace TrueCourseLab2
                     }
                 }
             }
-            //--
-            
+
             for (byte i = 0; i < firstStringArray.Length; i++)
             {
                 if (firstStringArray[i] != '#')
@@ -104,7 +99,6 @@ namespace TrueCourseLab2
 
         }
         
-        //2
         static string changeAllSameSymbolsInFirstStringThatContainsSecondString(ref string firstString, ref string secondString)
         {
             StringBuilder firstStringArray = new StringBuilder(firstString);

@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89372795-b2cc-4f03-b0ee-88ca02ee53a6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../CSCourseLab1/.idea/.idea.CSCourseLab1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CSCourseLab1/.idea/.idea.CSCourseLab1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CSCourseLab2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CSCourseLab2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSCourseLab2/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CSCourseLab2/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSCourseLab2/bin/Debug/netcoreapp2.2/CSCourseLab2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CSCourseLab2/bin/Debug/netcoreapp2.2/CSCourseLab2.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSCourseLab2/bin/Debug/netcoreapp2.2/CSCourseLab2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CSCourseLab2/bin/Debug/netcoreapp2.2/CSCourseLab2.pdb" afterDir="false" />
@@ -86,7 +84,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
