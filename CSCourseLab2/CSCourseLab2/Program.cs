@@ -52,7 +52,7 @@ namespace TrueCourseLab2
             {
                 for (byte j = 0; j < secondStringArray.Length; j++)
                 {
-                    if (firstStringArray[i] == '#')
+                    if (firstStringArray[i] == '#' || firstStringArray[i] == ' ')
                     {
                         continue;
                     }
@@ -113,7 +113,7 @@ namespace TrueCourseLab2
             {
                 for (byte j = 0; j < secondString.Length; j++)
                 {
-                    if (firstStringArray[i] == '#')
+                    if (firstStringArray[i] == '#' || firstStringArray[i] == ' ')
                     {
                         continue;
                     }else if (firstStringArray[i] == secondString[j])
