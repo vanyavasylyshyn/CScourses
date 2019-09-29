@@ -30,32 +30,52 @@ namespace Lab1Course
         {
             for (int i = 0; i < numberToCheck.Length; i++)
             {
-                if(!Char.IsDigit(numberToCheck[i]))
+                if (!Char.IsDigit(numberToCheck[i]))
                 {
-                    Console.WriteLine("Please, enter correct number."); 
-                    return true;
+                    if (numberToCheck[0] == '-')
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Please, enter correct number!");
+                        return true;
+                    }
+
                 }
+                
             }
 
             return false;
         }
         
-        //1
         public static int checkTheNumbeOfDigitsInNumber(string number)
         {
-            return number.Length;
+            byte numberOfDigits = 0;
+            for (int i = 0; i < number.Length; i++)
+            {
+                if (Char.IsDigit(number[i]))
+                {
+                    numberOfDigits++;
+                }
+            }
+
+            return numberOfDigits;
         }
         
-        //2
         public static void createArrayFromNumber(ref byte[] arrayToCreate, string number)
         {
+            byte counterForArray = 0;
             for (byte i = 0; i < number.Length; i++)
             {
-                arrayToCreate[i] = Byte.Parse(number[i].ToString());
+                if (Char.IsDigit(number[i]))
+                {
+                    arrayToCreate[counterForArray] = Byte.Parse(number[i].ToString());
+                    counterForArray++;
+                }
             }
         }
         
-        //3
         public static float getArithmeticMeanByNumbers(byte[] arrayWithNumbers)
         {
             float sumOfArrayElements = 0;
@@ -69,8 +89,6 @@ namespace Lab1Course
             return result;
         }
         
-        
-        //4
         public static double getGeometricMeanByNumbers(byte[] arrayWithNumbers)
         {
             
@@ -85,7 +103,6 @@ namespace Lab1Course
             return result;
         }
         
-        //5
         public static long getFactorial(int number)
         {
             if (number <= 1)
@@ -98,10 +115,13 @@ namespace Lab1Course
             }
              
         }
-
-        //6
+        
         public static long getSumOfEvenNumbers(int finishNumber)
         {
+            if (finishNumber < 0)
+            {
+                finishNumber = Math.Abs(finishNumber);
+            }
             long sumOfEvenNumbers = 0;
             for (int i = 0; i < finishNumber; i++)
             {
@@ -114,9 +134,12 @@ namespace Lab1Course
             return sumOfEvenNumbers;
         }
         
-        //7
         public static long getSumOfOddNumbers(int finishNumber)
         {
+            if (finishNumber < 0)
+            {
+                finishNumber = Math.Abs(finishNumber);
+            }
             long sumOfOddNumbers = 0;
             for (int i = 0; i < finishNumber; i++)
             {
@@ -129,7 +152,6 @@ namespace Lab1Course
             return sumOfOddNumbers;
         }
         
-        //8
         public static long getSumOfEvenNumbers(int startNumber, int endNumber)
         {
             long sumOfEvenNumbers = 0;
@@ -177,53 +199,52 @@ namespace Lab1Course
             
             string stringValueN;
             int digitsInNumber = 0;
-            
-            stringValueN = getNumberFromConsole("Please, enter number N(integer): ");
-            if (checkTheNumberForCorrectInput(stringValueN))
+            while (true)
             {
-                return;
+                stringValueN = getNumberFromConsole("Please, enter number N(integer) or enter FINISH to finish the program: ");
+                if (stringValueN == "FINISH")
+                {
+                    return;
+                }
+                if (checkTheNumberForCorrectInput(stringValueN))
+                {
+                    continue;
+                }
+
+                int parsedToIntValue = Int32.Parse(stringValueN);
+
+                digitsInNumber = checkTheNumbeOfDigitsInNumber(stringValueN);
+                showValue(digitsInNumber.ToString(), Tasks.First);
+
+                byte[] arrayFromNumber = new byte[digitsInNumber];
+                createArrayFromNumber(ref arrayFromNumber, stringValueN);
+                showValue(arrayFromNumber, Tasks.Second);
+
+                float arithmeticMeanFromNumber = getArithmeticMeanByNumbers(arrayFromNumber);
+                showValue(arithmeticMeanFromNumber.ToString(), Tasks.Third);
+
+                double geometricMeanFromNumber = getGeometricMeanByNumbers(arrayFromNumber);
+                showValue(geometricMeanFromNumber.ToString(), Tasks.Fourth);
+
+                long factorialFromNumber = getFactorial(parsedToIntValue);
+                showValue(factorialFromNumber.ToString(), Tasks.Fifth);
+
+                long sumOfEvenNumbers = getSumOfEvenNumbers(parsedToIntValue);
+                showValue(sumOfEvenNumbers.ToString(), Tasks.Sixth);
+
+                long sumOfOddNumbers = getSumOfOddNumbers(parsedToIntValue);
+                showValue(sumOfOddNumbers.ToString(), Tasks.Seventh);
+
+                int startNumberForRange =
+                    Int32.Parse(getNumberFromConsole("Please, enter starting number for range: "));
+                int endNumberForRange = Int32.Parse(getNumberFromConsole("Please, enter finishing number for range: "));
+
+                long sumOfEvenNumbersByRange = getSumOfEvenNumbers(startNumberForRange, endNumberForRange);
+                showValue(sumOfEvenNumbersByRange.ToString(), Tasks.EighthEvenNumbers);
+
+                long sumOfOddNumbersByRange = getSumOfOddNumbers(startNumberForRange, endNumberForRange);
+                showValue(sumOfOddNumbersByRange.ToString(), Tasks.EightOddNumbers);
             }
-            
-            int parsedToIntValue = Int32.Parse(stringValueN);
-            
-            //1
-            digitsInNumber = checkTheNumbeOfDigitsInNumber(stringValueN);
-            showValue(digitsInNumber.ToString(), Tasks.First);
-            
-            //2
-            byte[] arrayFromNumber = new byte[digitsInNumber];
-            createArrayFromNumber(ref arrayFromNumber, stringValueN);
-            showValue(arrayFromNumber, Tasks.Second);
-            
-            //3
-            float arithmeticMeanFromNumber = getArithmeticMeanByNumbers(arrayFromNumber);
-            showValue(arithmeticMeanFromNumber.ToString(), Tasks.Third);
-            
-            //4
-            double geometricMeanFromNumber = getGeometricMeanByNumbers(arrayFromNumber);
-            showValue(geometricMeanFromNumber.ToString(), Tasks.Fourth);
-            
-            //5
-            long factorialFromNumber = getFactorial(parsedToIntValue);
-            showValue(factorialFromNumber.ToString(), Tasks.Fifth);
-            
-            //6
-            long sumOfEvenNumbers = getSumOfEvenNumbers(parsedToIntValue);
-            showValue(sumOfEvenNumbers.ToString(), Tasks.Sixth);
-            
-            //7
-            long sumOfOddNumbers = getSumOfOddNumbers(parsedToIntValue);
-            showValue(sumOfOddNumbers.ToString(), Tasks.Seventh);
-            
-            //8
-            int startNumberForRange = Int32.Parse(getNumberFromConsole("Please, enter starting number for range: ")); 
-            int endNumberForRange = Int32.Parse(getNumberFromConsole("Please, enter finishing number for range: "));
-
-            long sumOfEvenNumbersByRange = getSumOfEvenNumbers(startNumberForRange, endNumberForRange);
-            showValue(sumOfEvenNumbersByRange.ToString(), Tasks.EighthEvenNumbers);
-
-            long sumOfOddNumbersByRange = getSumOfOddNumbers(startNumberForRange, endNumberForRange);
-            showValue(sumOfOddNumbersByRange.ToString(), Tasks.EightOddNumbers);
 
         }
     }
