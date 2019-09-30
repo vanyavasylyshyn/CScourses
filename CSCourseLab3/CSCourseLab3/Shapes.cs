@@ -3,30 +3,33 @@ using System.Text.RegularExpressions;
 
 namespace CSCourseLab3
 {
-    public class  Shapes
+    public abstract class  Shapes
     {
-        protected byte[,] _arrayForShape = new byte[10, 10];
+        protected byte[,] _arrayForShape;
 
         public virtual void generateElementsOfArrayByRandomNumbers() {}
-        public virtual 
-    }
+        public virtual void generateElementsOfArrayByRange(int startNumber, int finishNumber) {}
+        public virtual void generateElementsOfArrayByAnySymbols() {}
+        public virtual void generateElementsOfArrayByEnglishAlphabetSymbols() {}
 
-    public class FirstForm : Shapes
-    {
-        public override void generateElementsOfArrayByRandomNumbers()
+        public abstract int findMaxElementInTheAreaOfMatrix();
+        public abstract int findMinElementInTheAreaOfMatrix();
+        public abstract int findSymbolInTheAreaOfMatrix(char symbolToFind);
+
+        public void transposeMatrix()
         {
-            /*
-            for (int i = _arrayForShape.GetLength(0) - 1; i >= 0; i--)
+            byte buffer;
+            for (int i = 0; i < _arrayForShape.GetLength(0); i++)
             {
-                for (int j = 0; j < _arrayForShape.GetLength(1) - j; j++)
+                for (int j = 0; j < i; j++)
                 {
-                    Random random = new Random();
-                    int randomNumber = random.Next(100);
-                    _arrayForShape.SetValue(randomNumber, i, j);
-
+                    buffer = _arrayForShape[i, j];
+                    _arrayForShape[i, j] = _arrayForShape[j, i];
+                    _arrayForShape[j, i] = buffer;
                 }
             }
-            */
         }
+        
+        //TODO переписати елементи з одної області в іншу
     }
 }

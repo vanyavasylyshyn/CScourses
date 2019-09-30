@@ -1,4 +1,5 @@
 ﻿using System;
+using CSCourseLab3.Forms;
 
 namespace CSCourseLab3
 {
@@ -6,7 +7,7 @@ namespace CSCourseLab3
     {
         static void Main(string[] args)
         {
-
+            
         }
     }
 }
