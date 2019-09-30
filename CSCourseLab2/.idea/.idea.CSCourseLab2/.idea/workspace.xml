@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="89372795-b2cc-4f03-b0ee-88ca02ee53a6" name="Default Changelist" comment="" />
+    <list default="true" id="89372795-b2cc-4f03-b0ee-88ca02ee53a6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/CSCourseLab2/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CSCourseLab2/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSCourseLab2/bin/Debug/netcoreapp2.2/CSCourseLab2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CSCourseLab2/bin/Debug/netcoreapp2.2/CSCourseLab2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSCourseLab2/bin/Debug/netcoreapp2.2/CSCourseLab2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CSCourseLab2/bin/Debug/netcoreapp2.2/CSCourseLab2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSCourseLab2/obj/Debug/netcoreapp2.2/CSCourseLab2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CSCourseLab2/obj/Debug/netcoreapp2.2/CSCourseLab2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSCourseLab2/obj/Debug/netcoreapp2.2/CSCourseLab2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CSCourseLab2/obj/Debug/netcoreapp2.2/CSCourseLab2.pdb" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/CSCourseLab2/Program.cs" root0="FORCE_HIGHLIGHTING" />
@@ -66,8 +75,22 @@
       <updated>1569522426400</updated>
       <workItem from="1569522427783" duration="45000" />
       <workItem from="1569522484184" duration="92000" />
+      <workItem from="1569781567184" duration="689000" />
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
