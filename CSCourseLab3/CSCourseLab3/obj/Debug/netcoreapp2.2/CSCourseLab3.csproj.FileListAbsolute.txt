@@ -1,0 +1,11 @@
+/Users/Vanya/C# Course Labs/CSCourseLab3/CSCourseLab3/bin/Debug/netcoreapp2.2/CSCourseLab3.deps.json
+/Users/Vanya/C# Course Labs/CSCourseLab3/CSCourseLab3/bin/Debug/netcoreapp2.2/CSCourseLab3.runtimeconfig.json
+/Users/Vanya/C# Course Labs/CSCourseLab3/CSCourseLab3/bin/Debug/netcoreapp2.2/CSCourseLab3.runtimeconfig.dev.json
+/Users/Vanya/C# Course Labs/CSCourseLab3/CSCourseLab3/bin/Debug/netcoreapp2.2/CSCourseLab3.dll
+/Users/Vanya/C# Course Labs/CSCourseLab3/CSCourseLab3/bin/Debug/netcoreapp2.2/CSCourseLab3.pdb
+/Users/Vanya/C# Course Labs/CSCourseLab3/CSCourseLab3/obj/Debug/netcoreapp2.2/CSCourseLab3.csprojAssemblyReference.cache
+/Users/Vanya/C# Course Labs/CSCourseLab3/CSCourseLab3/obj/Debug/netcoreapp2.2/CSCourseLab3.csproj.CoreCompileInputs.cache
+/Users/Vanya/C# Course Labs/CSCourseLab3/CSCourseLab3/obj/Debug/netcoreapp2.2/CSCourseLab3.AssemblyInfoInputs.cache
+/Users/Vanya/C# Course Labs/CSCourseLab3/CSCourseLab3/obj/Debug/netcoreapp2.2/CSCourseLab3.AssemblyInfo.cs
+/Users/Vanya/C# Course Labs/CSCourseLab3/CSCourseLab3/obj/Debug/netcoreapp2.2/CSCourseLab3.dll
+/Users/Vanya/C# Course Labs/CSCourseLab3/CSCourseLab3/obj/Debug/netcoreapp2.2/CSCourseLab3.pdb

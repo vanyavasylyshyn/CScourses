@@ -79,36 +79,5 @@ namespace CSCourseLab3.Forms
                 }
             }
         }
-        
-
-        public override int findMaxElementInTheAreaOfMatrix(Shapes shape)
-        {
-            int maxElement = (int)Char.GetNumericValue(shape.getElementFromArray(0, 0));
-            for (int i = 0; i < _arrayForShape.GetLength(0); i++)
-            {
-                for (int j = 0; j < _arrayForShape.GetLength(1); j++)
-                {
-                    if (j <= i)
-                    {
-                        if ((int)Char.GetNumericValue(shape.getElementFromArray(i , j)) > maxElement)
-                        {
-                            maxElement = (int)Char.GetNumericValue(shape.getElementFromArray(i , j));
-                        }
-                    }
-                }
-            }
-
-            return maxElement;
-        }
-
-        public override int findMinElementInTheAreaOfMatrix(Shapes shape)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override int findSymbolInTheAreaOfMatrix(Shapes shape, char symbolToFind)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

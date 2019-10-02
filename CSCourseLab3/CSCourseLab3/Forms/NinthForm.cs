@@ -79,20 +79,5 @@ namespace CSCourseLab3.Forms
                 }
             }
         }
-
-        public override int findMaxElementInTheAreaOfMatrix(Shapes shape)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override int findMinElementInTheAreaOfMatrix(Shapes shape)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override int findSymbolInTheAreaOfMatrix(Shapes shape, char symbolToFind)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

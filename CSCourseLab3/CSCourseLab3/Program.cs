@@ -8,19 +8,13 @@ namespace CSCourseLab3
     {
         static void Main(string[] args)
         {
-            
-            FourteenthForm form = new FourteenthForm();
-            form.generateElementsOfArrayByRandomNumbers();
-            form.showArray();
-            form.transposeArray();
-            Console.WriteLine("brr");
-            form.showArray();
-
             FirstForm first = new FirstForm();
-
-            int maxNum = first.findMaxElementInTheAreaOfMatrix(form);
+            first.generateElementsOfArrayByAnySymbols();
+            first.showArray();
             Console.WriteLine("brr");
-            Console.WriteLine(maxNum);
+            Console.Write(SearchSymbols.findSymbolInTheAreaOfTenthForm(first, '='));
+            Console.WriteLine("brr");
+            Console.WriteLine(SearchNumbers.findMaxNumberInTheAreaOfFirstForm(first));
 
             /*
             while (true)

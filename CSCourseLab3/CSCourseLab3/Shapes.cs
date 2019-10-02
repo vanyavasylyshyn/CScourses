@@ -5,15 +5,13 @@ namespace CSCourseLab3
     public abstract class  Shapes
     {
         protected char[,] _arrayForShape = new char[5,5];
+        
         public abstract void generateElementsOfArrayByRandomNumbers();
         public abstract void generateElementsOfArrayByRange(int startNumber, int finishNumber);
         public abstract void generateElementsOfArrayByAnySymbols();
         public abstract void generateElementsOfArrayByEnglishAlphabetSymbols();
         
-        public abstract int findMaxElementInTheAreaOfMatrix(Shapes shape);
-        public abstract int findMinElementInTheAreaOfMatrix(Shapes shape);
-        public abstract int findSymbolInTheAreaOfMatrix(Shapes shape, char symbolToFind);
-
+        
         public char getElementFromArray(int indexRow, int indexColumn)
         {
             return _arrayForShape[indexRow, indexColumn];
@@ -22,6 +20,16 @@ namespace CSCourseLab3
         {
             _arrayForShape[indexRow, indexColumn] = element;
         }
+        public int getNumberOfRows()
+        {
+            return _arrayForShape.GetLength(0);
+        }
+
+        public int getNumberOfColumns()
+        {
+            return _arrayForShape.GetLength(1);
+        }
+        
         public void transposeArray()
         {
             int arrayLangth = _arrayForShape.GetLength(0);
@@ -74,43 +82,7 @@ namespace CSCourseLab3
                 }
             }
             */
-        
-        /*form 7
-         * Random random = new Random();
-            for (int i = 0; i < _arrayForShape.GetLength(0); i++)
-            {
-                for (int j = 0; j < _arrayForShape.GetLength(1) - i; j++)
-                {
-                    if (j <= i)
-                    {
-                        _arrayForShape[i, j] = Char.Parse(random.Next(10).ToString());
-                    }
-                    else
-                    {
-                        _arrayForShape[i, j] = '0';
-                    }
-                }
-            }
-         */
-        
-        /*form 10
-         * Random random = new Random();
-            for (int i = 0; i < _arrayForShape.GetLength(0); i++)
-            {
-                for (int j = 0; j < _arrayForShape.GetLength(1); j++)
-                {
-                    if (j < _arrayForShape.GetLength(1) - i && j >= i)
-                    {
-                        _arrayForShape[i, j] = Char.Parse(random.Next(10).ToString());
-                    }
-                    else
-                    {
-                        _arrayForShape[i, j] = '0';
-                    }
-                }
-            }
-         */
-        
+
         //TODO переписати елементи з одної області в іншу
     }
 }

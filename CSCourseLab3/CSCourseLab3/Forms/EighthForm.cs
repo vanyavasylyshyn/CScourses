@@ -11,11 +11,7 @@ namespace CSCourseLab3.Forms
             {
                 for (int j = 0; j < _arrayForShape.GetLength(1); j++)
                 {
-                    if (j < _arrayForShape.GetLength(1) - i - 1 )
-                    {
-                        _arrayForShape[i, j] = '0';
-                    }
-                    else if (j < i)
+                    if ((j < _arrayForShape.GetLength(1) - i - 1) || (j < i))
                     {
                         _arrayForShape[i, j] = '0';
                     }
@@ -34,11 +30,7 @@ namespace CSCourseLab3.Forms
             {
                 for (int j = 0; j < _arrayForShape.GetLength(1); j++)
                 {
-                    if (j < _arrayForShape.GetLength(1) - i - 1 )
-                    {
-                        _arrayForShape[i, j] = '0';
-                    }
-                    else if (j < i)
+                    if ((j < _arrayForShape.GetLength(1) - i - 1) || (j < i))
                     {
                         _arrayForShape[i, j] = '0';
                     }
@@ -57,11 +49,7 @@ namespace CSCourseLab3.Forms
             {
                 for (int j = 0; j < _arrayForShape.GetLength(1); j++)
                 {
-                    if (j < _arrayForShape.GetLength(1) - i - 1 )
-                    {
-                        _arrayForShape[i, j] = '0';
-                    }
-                    else if (j < i)
+                    if ((j < _arrayForShape.GetLength(1) - i - 1) || (j < i))
                     {
                         _arrayForShape[i, j] = '0';
                     }
@@ -80,11 +68,7 @@ namespace CSCourseLab3.Forms
             {
                 for (int j = 0; j < _arrayForShape.GetLength(1); j++)
                 {
-                    if (j < _arrayForShape.GetLength(1) - i - 1 )
-                    {
-                        _arrayForShape[i, j] = '0';
-                    }
-                    else if (j < i)
+                    if ((j < _arrayForShape.GetLength(1) - i - 1) || (j < i))
                     {
                         _arrayForShape[i, j] = '0';
                     }
@@ -94,21 +78,6 @@ namespace CSCourseLab3.Forms
                     }
                 }
             }
-        }
-
-        public override int findMaxElementInTheAreaOfMatrix(Shapes shape)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override int findMinElementInTheAreaOfMatrix(Shapes shape)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override int findSymbolInTheAreaOfMatrix(Shapes shape, char symbolToFind)
-        {
-            throw new NotImplementedException();
         }
     }
 }
