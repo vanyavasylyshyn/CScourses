@@ -4,10 +4,23 @@
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="CSCourseLab3" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Config.cs" t="Include" />
         <e p="CSCourseLab3.csproj" t="IncludeRecursive" />
         <e p="Forms" t="Include">
+          <e p="EighthForm.cs" t="Include" />
+          <e p="EleventhForm.cs" t="Include" />
+          <e p="FifthForm.cs" t="Include" />
           <e p="FirstForm.cs" t="Include" />
+          <e p="FourteenthForm.cs" t="Include" />
+          <e p="FourthForm.cs" t="Include" />
+          <e p="NinthForm.cs" t="Include" />
           <e p="SecondForm.cs" t="Include" />
+          <e p="SeventhForm.cs" t="Include" />
+          <e p="SixthForm.cs" t="Include" />
+          <e p="TenthForm.cs" t="Include" />
+          <e p="ThirdForm.cs" t="Include" />
+          <e p="ThirteenthForm.cs" t="Include" />
+          <e p="TwelfthForm.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">

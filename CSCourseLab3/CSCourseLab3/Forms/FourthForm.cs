@@ -2,7 +2,7 @@ using System;
 
 namespace CSCourseLab3.Forms
 {
-    public class SecondForm : Shapes
+    public class FourthForm : Shapes
     {
         public override void generateElementsOfArrayByRandomNumbers()
         {
@@ -11,16 +11,17 @@ namespace CSCourseLab3.Forms
             {
                 for (int j = 0; j < _arrayForShape.GetLength(1); j++)
                 {
-                    if (j >= i)
+                    if (j+1 >= _arrayForShape.GetLength(1) - i)
                     {
                         _arrayForShape[i, j] = Char.Parse(random.Next(Config.MinRandomElement, Config.MaxRandomElement).ToString());
+                        
                     }
                     else
                     {
                         _arrayForShape[i, j] = '0';
                     }
                 }
-            }
+            }        
         }
 
         public override void generateElementsOfArrayByRange(int startNumber, int finishNumber)
@@ -30,9 +31,10 @@ namespace CSCourseLab3.Forms
             {
                 for (int j = 0; j < _arrayForShape.GetLength(1); j++)
                 {
-                    if (j >= i)
+                    if (j+1 >= _arrayForShape.GetLength(1) - i)
                     {
                         _arrayForShape[i, j] = Char.Parse(random.Next(startNumber, finishNumber).ToString());
+                        
                     }
                     else
                     {
@@ -40,6 +42,7 @@ namespace CSCourseLab3.Forms
                     }
                 }
             }
+            
         }
 
         public override void generateElementsOfArrayByAnySymbols()
@@ -49,9 +52,10 @@ namespace CSCourseLab3.Forms
             {
                 for (int j = 0; j < _arrayForShape.GetLength(1); j++)
                 {
-                    if (j >= i)
+                    if (j+1 >= _arrayForShape.GetLength(1) - i)
                     {
                         _arrayForShape[i, j] = (char)random.Next(Config.StartingUnicodeForSymbols, Config.FinishingUnicodeForSymbols);
+                        
                     }
                     else
                     {
@@ -60,7 +64,7 @@ namespace CSCourseLab3.Forms
                 }
             }
         }
-        
+
         public override void generateElementsOfArrayByEnglishAlphabetSymbols()
         {
             Random random = new Random();
@@ -68,9 +72,10 @@ namespace CSCourseLab3.Forms
             {
                 for (int j = 0; j < _arrayForShape.GetLength(1); j++)
                 {
-                    if (j >= i)
+                    if (j+1 >= _arrayForShape.GetLength(1) - i)
                     {
                         _arrayForShape[i, j] = (char)random.Next(Config.StartingUnicodeForEnglishAlphabet, Config.FinishingUnicodeForEnglishAlphabet);
+                        
                     }
                     else
                     {
@@ -78,6 +83,7 @@ namespace CSCourseLab3.Forms
                     }
                 }
             }
+            
         }
 
         public override int findMaxElementInTheAreaOfMatrix(Shapes shape)

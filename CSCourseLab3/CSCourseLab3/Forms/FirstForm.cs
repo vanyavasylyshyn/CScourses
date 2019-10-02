@@ -1,40 +1,114 @@
+using System;
+
 namespace CSCourseLab3.Forms
 {
     public class FirstForm : Shapes
     {
         public override void generateElementsOfArrayByRandomNumbers()
         {
-            
+            Random random = new Random();
+            for (int i = 0; i < _arrayForShape.GetLength(0); i++)
+            {
+                for (int j = 0; j < _arrayForShape.GetLength(1); j++)
+                {
+                    if (j <= i)
+                    {
+                        _arrayForShape[i, j] = Char.Parse(random.Next(Config.MinRandomElement, Config.MaxRandomElement).ToString());
+                    }
+                    else
+                    {
+                        _arrayForShape[i, j] = '0';
+                    }
+                }
+            }
         }
 
         public override void generateElementsOfArrayByRange(int startNumber, int finishNumber)
         {
-            
+            Random random = new Random();
+            for (int i = 0; i < _arrayForShape.GetLength(0); i++)
+            {
+                for (int j = 0; j < _arrayForShape.GetLength(1); j++)
+                {
+                    if (j <= i)
+                    {
+                        _arrayForShape[i, j] = Char.Parse(random.Next(startNumber, finishNumber).ToString());
+                    }
+                    else
+                    {
+                        _arrayForShape[i, j] = '0';
+                    }
+                }
+            }
         }
 
         public override void generateElementsOfArrayByAnySymbols()
         {
-            
+            Random random = new Random();
+            for (int i = 0; i < _arrayForShape.GetLength(0); i++)
+            {
+                for (int j = 0; j < _arrayForShape.GetLength(1); j++)
+                {
+                    if (j <= i)
+                    {
+                        _arrayForShape[i, j] = (char)random.Next(Config.StartingUnicodeForSymbols, Config.FinishingUnicodeForSymbols);
+                    }
+                    else
+                    {
+                        _arrayForShape[i, j] = '0';
+                    }
+                }
+            }
         }
         
         public override void generateElementsOfArrayByEnglishAlphabetSymbols()
         {
-            
+            Random random = new Random();
+            for (int i = 0; i < _arrayForShape.GetLength(0); i++)
+            {
+                for (int j = 0; j < _arrayForShape.GetLength(1); j++)
+                {
+                    if (j <= i)
+                    {
+                        _arrayForShape[i, j] = (char)random.Next(Config.StartingUnicodeForEnglishAlphabet, Config.FinishingUnicodeForEnglishAlphabet);
+                    }
+                    else
+                    {
+                        _arrayForShape[i, j] = '0';
+                    }
+                }
+            }
+        }
+        
+
+        public override int findMaxElementInTheAreaOfMatrix(Shapes shape)
+        {
+            int maxElement = (int)Char.GetNumericValue(shape.getElementFromArray(0, 0));
+            for (int i = 0; i < _arrayForShape.GetLength(0); i++)
+            {
+                for (int j = 0; j < _arrayForShape.GetLength(1); j++)
+                {
+                    if (j <= i)
+                    {
+                        if ((int)Char.GetNumericValue(shape.getElementFromArray(i , j)) > maxElement)
+                        {
+                            maxElement = (int)Char.GetNumericValue(shape.getElementFromArray(i , j));
+                        }
+                    }
+                }
+            }
+
+            return maxElement;
         }
 
-        public override int findMaxElementInTheAreaOfMatrix()
+        public override int findMinElementInTheAreaOfMatrix(Shapes shape)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
-        public override int findMinElementInTheAreaOfMatrix()
+        public override int findSymbolInTheAreaOfMatrix(Shapes shape, char symbolToFind)
         {
-            throw new System.NotImplementedException();
-        }
-
-        public override int findSymbolInTheAreaOfMatrix(char symbolToFind)
-        {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
     }
 }
