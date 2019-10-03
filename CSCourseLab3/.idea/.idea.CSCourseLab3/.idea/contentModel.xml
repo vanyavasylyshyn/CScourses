@@ -4,7 +4,9 @@
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="CSCourseLab3" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Config.cs" t="Include" />
+        <e p="Config" t="Include">
+          <e p="Config.cs" t="Include" />
+        </e>
         <e p="CSCourseLab3.csproj" t="IncludeRecursive" />
         <e p="Forms" t="Include">
           <e p="EighthForm.cs" t="Include" />
@@ -16,11 +18,20 @@
           <e p="NinthForm.cs" t="Include" />
           <e p="SecondForm.cs" t="Include" />
           <e p="SeventhForm.cs" t="Include" />
+          <e p="Shapes.cs" t="Include" />
           <e p="SixthForm.cs" t="Include" />
           <e p="TenthForm.cs" t="Include" />
           <e p="ThirdForm.cs" t="Include" />
           <e p="ThirteenthForm.cs" t="Include" />
           <e p="TwelfthForm.cs" t="Include" />
+        </e>
+        <e p="Helpers" t="Include">
+          <e p="FormsHelper.cs" t="Include" />
+          <e p="UserInterfaceHelpers.cs" t="Include" />
+        </e>
+        <e p="Interfaces" t="Include">
+          <e p="UserInterface.cs" t="Include" />
+          <e p="UserInterfaceController.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -30,10 +41,17 @@
           </e>
         </e>
         <e p="Program.cs" t="Include" />
-        <e p="SearchMaxNumbers.cs" t="Include" />
-        <e p="SearchMinNumbers.cs" t="Include" />
-        <e p="SearchSymbols.cs" t="Include" />
-        <e p="Shapes.cs" t="Include" />
+        <e p="SearchClases" t="Include">
+          <e p="SearchMaxNumbers.cs" t="Include" />
+          <e p="SearchMinNumbers.cs" t="Include" />
+          <e p="SearchSymbols.cs" t="Include" />
+        </e>
+        <e p="TypeDefs" t="Include">
+          <e p="NumberOfActions.cs" t="Include" />
+          <e p="NumberOfForms.cs" t="Include" />
+          <e p="NumberOfWaysToGenerateElements.cs" t="Include" />
+          <e p="WaysToSearch.cs" t="Include" />
+        </e>
       </e>
       <e p="CSCourseLab3.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />

@@ -4,6 +4,10 @@ namespace CSCourseLab3.Forms
 {
     public class FourthForm : Shapes
     {
+        public FourthForm()
+        {
+            base._typeOfForm = NumberOfForms.FourthForm;
+        }
         public override void generateElementsOfArrayByRandomNumbers()
         {
             Random random = new Random();
@@ -13,27 +17,35 @@ namespace CSCourseLab3.Forms
                 {
                     if (j+1 >= _arrayForShape.GetLength(1) - i)
                     {
-                        _arrayForShape[i, j] = Char.Parse(random.Next(Config.MinRandomElement, Config.MaxRandomElement).ToString());
+                        _arrayForShape[i, j] = random.Next(Config.MinRandomElement, Config.MaxRandomElement);
                         
                     }
                     else
                     {
-                        _arrayForShape[i, j] = '0';
+                        _arrayForShape[i, j] = 0;
                     }
                 }
-            }        
+            }
+
+            _typeOfNumberArrayElements = true;
         }
 
-        public override void generateElementsOfArrayByRange(int startNumber, int finishNumber)
+        public override void generateElementsOfArrayByRange(int startNumber, int finishNumber, int typeOfNumbers)
         {
-            Random random = new Random();
             for (int i = 0; i < _arrayForShape.GetLength(0); i++)
             {
                 for (int j = 0; j < _arrayForShape.GetLength(1); j++)
                 {
                     if (j+1 >= _arrayForShape.GetLength(1) - i)
                     {
-                        _arrayForShape[i, j] = Char.Parse(random.Next(startNumber, finishNumber).ToString());
+                        if (typeOfNumbers == 1)
+                        {
+                            _arrayForShape[i, j] = FormsHelper.generatePairNumbersInRange(startNumber, finishNumber);
+                        }
+                        else
+                        {
+                            _arrayForShape[i, j] = FormsHelper.generateOddNumbersInRange(startNumber, finishNumber);
+                        }
                         
                     }
                     else
@@ -54,7 +66,7 @@ namespace CSCourseLab3.Forms
                 {
                     if (j+1 >= _arrayForShape.GetLength(1) - i)
                     {
-                        _arrayForShape[i, j] = (char)random.Next(Config.StartingUnicodeForSymbols, Config.FinishingUnicodeForSymbols);
+                        _arrayForShape[i, j] = random.Next(Config.StartingUnicodeForSymbols, Config.FinishingUnicodeForSymbols);
                         
                     }
                     else

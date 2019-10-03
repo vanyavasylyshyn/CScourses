@@ -6,14 +6,20 @@ namespace CSCourseLab3
     {
         public static char findMaxNumberInTheAreaOfFirstForm(Shapes objectWithArray)
         {
-            int maxElement = objectWithArray.getElementFromArray(0, 0);
-            
+            byte counterForCreatingFirstElement = 0;
+            int maxElement = 0;
             for (int i = 0; i < objectWithArray.getNumberOfRows(); i++)
             {
                 for (int j = 0; j < objectWithArray.getNumberOfColumns(); j++)
                 {
                     if (j <= i)
                     {
+                        if (counterForCreatingFirstElement < 1)
+                        {
+                            maxElement = objectWithArray.getElementFromArray(i, j);
+                            counterForCreatingFirstElement++;
+                        }
+                        
                         if (objectWithArray.getElementFromArray(i , j) > maxElement)
                         {
                             maxElement = objectWithArray.getElementFromArray(i , j);
@@ -31,14 +37,21 @@ namespace CSCourseLab3
         
         public static char findMaxNumberInTheAreaOfSecondForm(Shapes objectWithArray)
         {
-            int maxElement = objectWithArray.getElementFromArray(0, 0);
-
+            byte counterForCreatingFirstElement = 0;
+            int maxElement = 0;
+            
             for (int i = 0; i < objectWithArray.getNumberOfRows(); i++)
             {
                 for (int j = 0; j < objectWithArray.getNumberOfColumns(); j++)
                 {
                     if (j >= i)
                     {
+                        if (counterForCreatingFirstElement < 1)
+                        {
+                            maxElement = objectWithArray.getElementFromArray(i, j);
+                            counterForCreatingFirstElement++;
+                        }
+                        
                         if (objectWithArray.getElementFromArray(i, j) > maxElement)
                         {
                             maxElement = objectWithArray.getElementFromArray(i, j);
@@ -56,7 +69,8 @@ namespace CSCourseLab3
         
         public static char findMaxNumberInTheAreaOfThirdForm(Shapes objectWithArray)
         {
-            int maxElement = objectWithArray.getElementFromArray(0, 0);
+            byte counterForCreatingFirstElement = 0;
+            int maxElement = 0;
             
             for (int i = 0; i < objectWithArray.getNumberOfRows(); i++)
             {
@@ -64,6 +78,12 @@ namespace CSCourseLab3
                 {
                     if (j < objectWithArray.getNumberOfColumns() - i)
                     {
+                        if (counterForCreatingFirstElement < 1)
+                        {
+                            maxElement = objectWithArray.getElementFromArray(i, j);
+                            counterForCreatingFirstElement++;
+                        }
+                        
                         if (objectWithArray.getElementFromArray(i, j) > maxElement)
                         {
                             maxElement = objectWithArray.getElementFromArray(i, j);
@@ -81,7 +101,8 @@ namespace CSCourseLab3
         
         public static char findMaxNumberInTheAreaOfFourthForm(Shapes objectWithArray)
         {
-            int maxElement = objectWithArray.getElementFromArray(0, 0);
+            byte counterForCreatingFirstElement = 0;
+            int maxElement = 0;
             
             for (int i = 0; i < objectWithArray.getNumberOfRows(); i++)
             {
@@ -89,6 +110,12 @@ namespace CSCourseLab3
                 {
                     if (j+1 >= objectWithArray.getNumberOfColumns() - i)
                     {
+                        if (counterForCreatingFirstElement < 1)
+                        {
+                            maxElement = objectWithArray.getElementFromArray(i, j);
+                            counterForCreatingFirstElement++;
+                        }
+                        
                         if (objectWithArray.getElementFromArray(i, j) > maxElement)
                         {
                             maxElement = objectWithArray.getElementFromArray(i, j);
@@ -106,7 +133,8 @@ namespace CSCourseLab3
         
         public static char findMaxNumberInTheAreaOfFifthForm(Shapes objectWithArray)
         {
-            int maxElement = objectWithArray.getElementFromArray(0, 0);
+            byte counterForCreatingFirstElement = 0;
+            int maxElement = 0;
             
             for (int i = 0; i < objectWithArray.getNumberOfRows(); i++)
             {
@@ -115,6 +143,12 @@ namespace CSCourseLab3
                     if ((j < objectWithArray.getNumberOfColumns() - i && j >= i) ||
                         (j <= i && j >= objectWithArray.getNumberOfColumns() - i - 1))
                     {
+                        if (counterForCreatingFirstElement < 1)
+                        {
+                            maxElement = objectWithArray.getElementFromArray(i, j);
+                            counterForCreatingFirstElement++;
+                        }
+                        
                         if (objectWithArray.getElementFromArray(i, j) > maxElement)
                         {
                             maxElement = objectWithArray.getElementFromArray(i, j);
@@ -132,7 +166,8 @@ namespace CSCourseLab3
         
         public static char findMaxNumberInTheAreaOfSixthForm(Shapes objectWithArray)
         {
-            int maxElement = objectWithArray.getElementFromArray(0, 0);
+            byte counterForCreatingFirstElement = 0;
+            int maxElement = 0;
             
             for (int i = 0; i < objectWithArray.getNumberOfRows(); i++)
             {
@@ -145,6 +180,12 @@ namespace CSCourseLab3
                     }
                     else
                     {
+                        if (counterForCreatingFirstElement < 1)
+                        {
+                            maxElement = objectWithArray.getElementFromArray(i, j);
+                            counterForCreatingFirstElement++;
+                        }
+                        
                         if (objectWithArray.getElementFromArray(i, j) > maxElement)
                         {
                             maxElement = objectWithArray.getElementFromArray(i, j);
@@ -158,7 +199,8 @@ namespace CSCourseLab3
         
         public static char findMaxNumberInTheAreaOfSeventhForm(Shapes objectWithArray)
         {
-            int maxElement = objectWithArray.getElementFromArray(0, 0);
+            byte counterForCreatingFirstElement = 0;
+            int maxElement = 0;
             
             for (int i = 0; i < objectWithArray.getNumberOfRows(); i++)
             {
@@ -171,6 +213,12 @@ namespace CSCourseLab3
                     }
                     else
                     {
+                        if (counterForCreatingFirstElement < 1)
+                        {
+                            maxElement = objectWithArray.getElementFromArray(i, j);
+                            counterForCreatingFirstElement++;
+                        }
+                        
                         if (objectWithArray.getElementFromArray(i, j) > maxElement)
                         {
                             maxElement = objectWithArray.getElementFromArray(i, j);
@@ -184,7 +232,8 @@ namespace CSCourseLab3
         
         public static char findMaxNumberInTheAreaOfEighthForm(Shapes objectWithArray)
         {
-            int maxElement = objectWithArray.getElementFromArray(0, 0);
+            byte counterForCreatingFirstElement = 0;
+            int maxElement = 0;
             
             for (int i = 0; i < objectWithArray.getNumberOfRows(); i++)
             {
@@ -196,6 +245,12 @@ namespace CSCourseLab3
                     }
                     else
                     {
+                        if (counterForCreatingFirstElement < 1)
+                        {
+                            maxElement = objectWithArray.getElementFromArray(i, j);
+                            counterForCreatingFirstElement++;
+                        }
+                        
                         if (objectWithArray.getElementFromArray(i, j) > maxElement)
                         {
                             maxElement = objectWithArray.getElementFromArray(i, j);
@@ -209,7 +264,8 @@ namespace CSCourseLab3
         
         public static char findMaxNumberInTheAreaOfNinthForm(Shapes objectWithArray)
         {
-            int maxElement = objectWithArray.getElementFromArray(0, 0);
+            byte counterForCreatingFirstElement = 0;
+            int maxElement = 0;
             
             for (int i = 0; i < objectWithArray.getNumberOfRows(); i++)
             {
@@ -217,6 +273,12 @@ namespace CSCourseLab3
                 {
                     if (j <= i && j >= objectWithArray.getNumberOfColumns() - i - 1 )
                     {
+                        if (counterForCreatingFirstElement < 1)
+                        {
+                            maxElement = objectWithArray.getElementFromArray(i, j);
+                            counterForCreatingFirstElement++;
+                        }
+                        
                         if (objectWithArray.getElementFromArray(i, j) > maxElement)
                         {
                             maxElement = objectWithArray.getElementFromArray(i, j);
@@ -234,7 +296,8 @@ namespace CSCourseLab3
         
         public static char findMaxNumberInTheAreaOfTenthForm(Shapes objectWithArray)
         {
-            int maxElement = objectWithArray.getElementFromArray(0, 0);
+            byte counterForCreatingFirstElement = 0;
+            int maxElement = 0;
             
             for (int i = 0; i < objectWithArray.getNumberOfRows(); i++)
             {
@@ -242,6 +305,12 @@ namespace CSCourseLab3
                 {
                     if (j < objectWithArray.getNumberOfColumns() - i && j >= i)
                     {
+                        if (counterForCreatingFirstElement < 1)
+                        {
+                            maxElement = objectWithArray.getElementFromArray(i, j);
+                            counterForCreatingFirstElement++;
+                        }
+                        
                         if (objectWithArray.getElementFromArray(i, j) > maxElement)
                         {
                             maxElement = objectWithArray.getElementFromArray(i, j);
@@ -259,7 +328,8 @@ namespace CSCourseLab3
         
         public static char findMaxNumberInTheAreaOfEleventhForm(Shapes objectWithArray)
         {
-            int maxElement = objectWithArray.getElementFromArray(0, 0);
+            byte counterForCreatingFirstElement = 0;
+            int maxElement = 0;
             
             for (int i = 0; i < objectWithArray.getNumberOfRows(); i++)
             {
@@ -267,6 +337,12 @@ namespace CSCourseLab3
                 {
                     if (j < objectWithArray.getNumberOfColumns() - i  || j <= i)
                     {
+                        if (counterForCreatingFirstElement < 1)
+                        {
+                            maxElement = objectWithArray.getElementFromArray(i, j);
+                            counterForCreatingFirstElement++;
+                        }
+                        
                         if (objectWithArray.getElementFromArray(i, j) > maxElement)
                         {
                             maxElement = objectWithArray.getElementFromArray(i, j);
@@ -284,7 +360,8 @@ namespace CSCourseLab3
         
         public static char findMaxNumberInTheAreaOfTwelfthForm(Shapes objectWithArray)
         {
-            int maxElement = objectWithArray.getElementFromArray(0, 0);
+            byte counterForCreatingFirstElement = 0;
+            int maxElement = 0;
             
             for (int i = 0; i < objectWithArray.getNumberOfRows(); i++)
             {
@@ -293,6 +370,12 @@ namespace CSCourseLab3
                     if (j < objectWithArray.getNumberOfColumns() && j >= i ||
                         j <= i && j > objectWithArray.getNumberOfColumns() - i - 2 )
                     {
+                        if (counterForCreatingFirstElement < 1)
+                        {
+                            maxElement = objectWithArray.getElementFromArray(i, j);
+                            counterForCreatingFirstElement++;
+                        }
+                        
                         if (objectWithArray.getElementFromArray(i, j) > maxElement)
                         {
                             maxElement = objectWithArray.getElementFromArray(i, j);
@@ -310,7 +393,8 @@ namespace CSCourseLab3
         
         public static char findMaxNumberInTheAreaOfThirteenthForm(Shapes objectWithArray)
         {
-            int maxElement = objectWithArray.getElementFromArray(0, 0);
+            byte counterForCreatingFirstElement = 0;
+            int maxElement = 0;
             
             for (int i = 0; i < objectWithArray.getNumberOfRows(); i++)
             {
@@ -322,6 +406,12 @@ namespace CSCourseLab3
                     }
                     else
                     {
+                        if (counterForCreatingFirstElement < 1)
+                        {
+                            maxElement = objectWithArray.getElementFromArray(i, j);
+                            counterForCreatingFirstElement++;
+                        }
+                        
                         if (objectWithArray.getElementFromArray(i, j) > maxElement)
                         {
                             maxElement = objectWithArray.getElementFromArray(i, j);
@@ -335,7 +425,8 @@ namespace CSCourseLab3
         
         public static char findMaxNumberInTheAreaOfFourteenthForm(Shapes objectWithArray)
         {
-            int maxElement = objectWithArray.getElementFromArray(0, 0);
+            byte counterForCreatingFirstElement = 0;
+            int maxElement = 0;
             
             for (int i = 0; i < objectWithArray.getNumberOfRows(); i++)
             {
@@ -347,6 +438,12 @@ namespace CSCourseLab3
                     }
                     else
                     {
+                        if (counterForCreatingFirstElement < 1)
+                        {
+                            maxElement = objectWithArray.getElementFromArray(i, j);
+                            counterForCreatingFirstElement++;
+                        }
+                        
                         if (objectWithArray.getElementFromArray(i, j) > maxElement)
                         {
                             maxElement = objectWithArray.getElementFromArray(i, j);

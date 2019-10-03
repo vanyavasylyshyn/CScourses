@@ -4,6 +4,10 @@ namespace CSCourseLab3.Forms
 {
     public class TwelfthForm : Shapes
     {
+        public TwelfthForm()
+        {
+            base._typeOfForm = NumberOfForms.TwelfthForm;
+        }
         public override void generateElementsOfArrayByRandomNumbers()
         {
             Random random = new Random();
@@ -14,19 +18,20 @@ namespace CSCourseLab3.Forms
                     if (j < _arrayForShape.GetLength(1) && j >= i ||
                         j <= i && j > _arrayForShape.GetLength(1) - i - 2 )
                     {
-                        _arrayForShape[i, j] = Char.Parse(random.Next(Config.MinRandomElement, Config.MaxRandomElement).ToString());
+                        _arrayForShape[i, j] = random.Next(Config.MinRandomElement, Config.MaxRandomElement);
                     }
                     else
                     {
-                        _arrayForShape[i, j] = '0';
+                        _arrayForShape[i, j] = 0;
                     }
                 }
             }
+
+            _typeOfNumberArrayElements = true;
         }
 
-        public override void generateElementsOfArrayByRange(int startNumber, int finishNumber)
+        public override void generateElementsOfArrayByRange(int startNumber, int finishNumber, int typeOfNumbers)
         {
-            Random random = new Random();
             for (int i = 0; i < _arrayForShape.GetLength(0); i++)
             {
                 for (int j = 0; j < _arrayForShape.GetLength(1); j++)
@@ -34,14 +39,23 @@ namespace CSCourseLab3.Forms
                     if (j < _arrayForShape.GetLength(1) && j >= i ||
                         j <= i && j > _arrayForShape.GetLength(1) - i - 2 )
                     {
-                        _arrayForShape[i, j] = Char.Parse(random.Next(startNumber, finishNumber).ToString());
+                        if (typeOfNumbers == 1)
+                        {
+                            _arrayForShape[i, j] = FormsHelper.generatePairNumbersInRange(startNumber, finishNumber);
+                        }
+                        else
+                        {
+                            _arrayForShape[i, j] = FormsHelper.generateOddNumbersInRange(startNumber, finishNumber);
+                        }
                     }
                     else
                     {
-                        _arrayForShape[i, j] = '0';
+                        _arrayForShape[i, j] = 0;
                     }
                 }
             }
+
+            _typeOfNumberArrayElements = true;
         }
 
         public override void generateElementsOfArrayByAnySymbols()
@@ -54,7 +68,7 @@ namespace CSCourseLab3.Forms
                     if (j < _arrayForShape.GetLength(1) && j >= i ||
                         j <= i && j > _arrayForShape.GetLength(1) - i - 2 )
                     {
-                        _arrayForShape[i, j] = (char)random.Next(Config.StartingUnicodeForSymbols, Config.FinishingUnicodeForSymbols);
+                        _arrayForShape[i, j] = random.Next(Config.StartingUnicodeForSymbols, Config.FinishingUnicodeForSymbols);
                     }
                     else
                     {
@@ -74,7 +88,7 @@ namespace CSCourseLab3.Forms
                     if (j < _arrayForShape.GetLength(1) && j >= i ||
                         j <= i && j > _arrayForShape.GetLength(1) - i - 2 )
                     {
-                        _arrayForShape[i, j] = (char)random.Next(Config.StartingUnicodeForEnglishAlphabet, Config.StartingUnicodeForEnglishAlphabet);
+                        _arrayForShape[i, j] = random.Next(Config.StartingUnicodeForEnglishAlphabet, Config.StartingUnicodeForEnglishAlphabet);
                     }
                     else
                     {

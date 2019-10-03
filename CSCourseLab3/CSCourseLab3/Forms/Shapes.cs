@@ -4,22 +4,31 @@ namespace CSCourseLab3
 {
     public abstract class  Shapes
     {
-        protected char[,] _arrayForShape = new char[5,5];
+        protected NumberOfForms _typeOfForm;
+        
+        protected bool _typeOfNumberArrayElements = false;
+        protected int[,] _arrayForShape = new Int32[5,5];
         
         public abstract void generateElementsOfArrayByRandomNumbers();
-        public abstract void generateElementsOfArrayByRange(int startNumber, int finishNumber);
+        public abstract void generateElementsOfArrayByRange(int startNumber, int finishNumber, int typeOfNumbers);
         public abstract void generateElementsOfArrayByAnySymbols();
         public abstract void generateElementsOfArrayByEnglishAlphabetSymbols();
+
+        public bool getTypeOfNumberArrayElemens()
+        {
+            return _typeOfNumberArrayElements;
+        }
         
+        public NumberOfForms getNumberOfForms()
+        {
+            return _typeOfForm;
+        }
         
-        public char getElementFromArray(int indexRow, int indexColumn)
+        public int getElementFromArray(int indexRow, int indexColumn)
         {
             return _arrayForShape[indexRow, indexColumn];
         }
-        public void setElementInArray(char element, int indexRow, int indexColumn)
-        {
-            _arrayForShape[indexRow, indexColumn] = element;
-        }
+        
         public int getNumberOfRows()
         {
             return _arrayForShape.GetLength(0);
@@ -43,7 +52,7 @@ namespace CSCourseLab3
                 {
                     int offsetOfArray = i - firsLayerOfArray;
 
-                    char top = _arrayForShape[firsLayerOfArray, i];
+                    int top = _arrayForShape[firsLayerOfArray, i];
 
                     _arrayForShape[firsLayerOfArray, i] =
                         _arrayForShape[lastLayerOfArray - offsetOfArray, firsLayerOfArray];
@@ -60,29 +69,32 @@ namespace CSCourseLab3
 
         public void showArray()
         {
-            for (int i = 0; i < _arrayForShape.GetLength(0); i++)
+            Console.WriteLine("Array:");
+            if (_typeOfNumberArrayElements == true)
             {
-                for (int j = 0; j < _arrayForShape.GetLength(1); j++)
+                for (int i = 0; i < _arrayForShape.GetLength(0); i++)
                 {
-                    Console.Write(_arrayForShape[i, j] + " ");
+                    for (int j = 0; j < _arrayForShape.GetLength(1); j++)
+                    {
+                        Console.Write(_arrayForShape[i, j] + "\t");
+                    }
+
+                    Console.WriteLine();
                 }
-                Console.WriteLine();
+            }
+            else
+            {
+                for (int i = 0; i < _arrayForShape.GetLength(0); i++)
+                {
+                    for (int j = 0; j < _arrayForShape.GetLength(1); j++)
+                    {
+                        Console.Write((char)_arrayForShape[i, j] + "\t");
+                    }
+
+                    Console.WriteLine();
+                }
             }
         }
-        
-        /*rotate 180
-            int buffer;
-            for (int i = 0; i < _arrayForShape.GetLength(0); i++)
-            {
-                for (int j = 0; j < i; j++)
-                {
-                    buffer = _arrayForShape[i, j];
-                    _arrayForShape[i, j] = _arrayForShape[j, i];
-                    _arrayForShape[j, i] = buffer;
-                }
-            }
-            */
-
         //TODO переписати елементи з одної області в іншу
     }
 }
