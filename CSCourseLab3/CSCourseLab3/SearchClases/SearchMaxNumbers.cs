@@ -4,7 +4,7 @@ namespace CSCourseLab3
 {
     public partial class SearchNumbers
     {
-        public static char findMaxNumberInTheAreaOfFirstForm(Shapes objectWithArray)
+        public static int findMaxNumberInTheAreaOfFirstForm(Shapes objectWithArray)
         {
             byte counterForCreatingFirstElement = 0;
             int maxElement = 0;
@@ -32,10 +32,10 @@ namespace CSCourseLab3
                 }
             }
 
-            return (char)maxElement;
+            return maxElement;
         }
         
-        public static char findMaxNumberInTheAreaOfSecondForm(Shapes objectWithArray)
+        public static int findMaxNumberInTheAreaOfSecondForm(Shapes objectWithArray)
         {
             byte counterForCreatingFirstElement = 0;
             int maxElement = 0;
@@ -64,10 +64,10 @@ namespace CSCourseLab3
                 }
             }
 
-            return (char)maxElement;
+            return maxElement;
         }
         
-        public static char findMaxNumberInTheAreaOfThirdForm(Shapes objectWithArray)
+        public static int findMaxNumberInTheAreaOfThirdForm(Shapes objectWithArray)
         {
             byte counterForCreatingFirstElement = 0;
             int maxElement = 0;
@@ -99,7 +99,7 @@ namespace CSCourseLab3
             return (char)maxElement;
         }
         
-        public static char findMaxNumberInTheAreaOfFourthForm(Shapes objectWithArray)
+        public static int findMaxNumberInTheAreaOfFourthForm(Shapes objectWithArray)
         {
             byte counterForCreatingFirstElement = 0;
             int maxElement = 0;
@@ -128,10 +128,10 @@ namespace CSCourseLab3
                 }
             }
 
-            return (char)maxElement;
+            return maxElement;
         }
         
-        public static char findMaxNumberInTheAreaOfFifthForm(Shapes objectWithArray)
+        public static int findMaxNumberInTheAreaOfFifthForm(Shapes objectWithArray)
         {
             byte counterForCreatingFirstElement = 0;
             int maxElement = 0;
@@ -161,10 +161,10 @@ namespace CSCourseLab3
                 }
             }
 
-            return (char)maxElement;
+            return maxElement;
         }
         
-        public static char findMaxNumberInTheAreaOfSixthForm(Shapes objectWithArray)
+        public static int findMaxNumberInTheAreaOfSixthForm(Shapes objectWithArray)
         {
             byte counterForCreatingFirstElement = 0;
             int maxElement = 0;
@@ -194,10 +194,10 @@ namespace CSCourseLab3
                 }
             }
 
-            return (char)maxElement;
+            return maxElement;
         }
         
-        public static char findMaxNumberInTheAreaOfSeventhForm(Shapes objectWithArray)
+        public static int findMaxNumberInTheAreaOfSeventhForm(Shapes objectWithArray)
         {
             byte counterForCreatingFirstElement = 0;
             int maxElement = 0;
@@ -227,10 +227,10 @@ namespace CSCourseLab3
                 }
             }
 
-            return (char)maxElement;
+            return maxElement;
         }
         
-        public static char findMaxNumberInTheAreaOfEighthForm(Shapes objectWithArray)
+        public static int findMaxNumberInTheAreaOfEighthForm(Shapes objectWithArray)
         {
             byte counterForCreatingFirstElement = 0;
             int maxElement = 0;
@@ -259,10 +259,10 @@ namespace CSCourseLab3
                 }
             }
 
-            return (char)maxElement;
+            return maxElement;
         }
         
-        public static char findMaxNumberInTheAreaOfNinthForm(Shapes objectWithArray)
+        public static int findMaxNumberInTheAreaOfNinthForm(Shapes objectWithArray)
         {
             byte counterForCreatingFirstElement = 0;
             int maxElement = 0;
@@ -291,10 +291,10 @@ namespace CSCourseLab3
                 }
             }
 
-            return (char)maxElement;
+            return maxElement;
         }
         
-        public static char findMaxNumberInTheAreaOfTenthForm(Shapes objectWithArray)
+        public static int findMaxNumberInTheAreaOfTenthForm(Shapes objectWithArray)
         {
             byte counterForCreatingFirstElement = 0;
             int maxElement = 0;
@@ -323,10 +323,10 @@ namespace CSCourseLab3
                 }
             }
 
-            return (char)maxElement;
+            return maxElement;
         }
         
-        public static char findMaxNumberInTheAreaOfEleventhForm(Shapes objectWithArray)
+        public static int findMaxNumberInTheAreaOfEleventhForm(Shapes objectWithArray)
         {
             byte counterForCreatingFirstElement = 0;
             int maxElement = 0;
@@ -355,10 +355,10 @@ namespace CSCourseLab3
                 }
             }
 
-            return (char)maxElement;
+            return maxElement;
         }
         
-        public static char findMaxNumberInTheAreaOfTwelfthForm(Shapes objectWithArray)
+        public static int findMaxNumberInTheAreaOfTwelfthForm(Shapes objectWithArray)
         {
             byte counterForCreatingFirstElement = 0;
             int maxElement = 0;
@@ -388,10 +388,10 @@ namespace CSCourseLab3
                 }
             }
 
-            return (char)maxElement;
+            return maxElement;
         }
         
-        public static char findMaxNumberInTheAreaOfThirteenthForm(Shapes objectWithArray)
+        public static int findMaxNumberInTheAreaOfThirteenthForm(Shapes objectWithArray)
         {
             byte counterForCreatingFirstElement = 0;
             int maxElement = 0;
@@ -420,10 +420,10 @@ namespace CSCourseLab3
                 }
             }
 
-            return (char)maxElement;
+            return maxElement;
         }
         
-        public static char findMaxNumberInTheAreaOfFourteenthForm(Shapes objectWithArray)
+        public static int findMaxNumberInTheAreaOfFourteenthForm(Shapes objectWithArray)
         {
             byte counterForCreatingFirstElement = 0;
             int maxElement = 0;
@@ -452,7 +452,7 @@ namespace CSCourseLab3
                 }
             }
 
-            return (char)maxElement;
+            return maxElement;
         }
     }
 }

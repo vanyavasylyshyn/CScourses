@@ -88,7 +88,7 @@ namespace CSCourseLab3.Forms
                     }
                     else
                     {
-                        _arrayForShape[i, j] = random.Next(Config.StartingUnicodeForEnglishAlphabet, Config.StartingUnicodeForEnglishAlphabet);
+                        _arrayForShape[i, j] = random.Next(Config.StartingUnicodeForEnglishAlphabet, Config.FinishingUnicodeForEnglishAlphabet);
                     }
                 }
             }

@@ -6,6 +6,10 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="Config" t="Include">
           <e p="Config.cs" t="Include" />
+          <e p="NumberOfTurningsForFirstShapeType.cs" t="Include" />
+          <e p="NumberOfTurningsForFourthShapeType.cs" t="Include" />
+          <e p="NumberOfTurningsForSecondShapeType.cs" t="Include" />
+          <e p="NumberOfTurningsForThirdShapeType.cs" t="Include" />
         </e>
         <e p="CSCourseLab3.csproj" t="IncludeRecursive" />
         <e p="Forms" t="Include">
@@ -32,6 +36,9 @@
         <e p="Interfaces" t="Include">
           <e p="UserInterface.cs" t="Include" />
           <e p="UserInterfaceController.cs" t="Include" />
+          <e p="UserModuleForSearchNumbers.cs" t="Include" />
+          <e p="UserModuleForSearchSymbols.cs" t="Include" />
+          <e p="UserModuleToRewriteForm.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">

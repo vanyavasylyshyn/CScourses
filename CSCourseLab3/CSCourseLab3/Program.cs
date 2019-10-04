@@ -8,12 +8,9 @@ namespace CSCourseLab3
     {
         static void Main(string[] args)
         {
-            while (true)
-            {
-                Shapes choosenForm = UserInterface.chooseFormToGenerateElements();
-                UserInterface.chooseWayOfGeneratingElements(choosenForm);
-                UserInterface.chooseAction(choosenForm);   
-            }
+            Shapes choosenForm = UserInterface.chooseFormToGenerateElements(); 
+            UserInterface.chooseWayOfGeneratingElements(choosenForm); 
+            UserInterface.chooseAction(choosenForm);
         }
     }
 }

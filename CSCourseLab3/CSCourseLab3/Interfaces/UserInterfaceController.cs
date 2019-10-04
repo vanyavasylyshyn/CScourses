@@ -17,98 +17,36 @@ namespace CSCourseLab3
             
             if (UserInterfaceHelpers.checkTheCorrectInputNumberOfForm(numberOfWay, Config.NumberOfWaysToSearch))
             {
+                //TODO винести по файлах, зробити норм перевірку чи сисла чи символи
                 if (formToSearch.getTypeOfNumberArrayElemens())
                 {
-                    Console.WriteLine("Please, choose form to generate elements(from 1 to 14) or \"500\" to finish program: ");
+                    if (numberOfWay == (int)WaysToSearch.FindSymbol)
+                    {
+                        Console.WriteLine("!!!.Please, use this way only for number array values.");
+                        return;
+                    }
+                    
+                    Console.WriteLine("Please, choose form to search elements(from 1 to 14) or \"500\" to finish program: ");
+                    int numberOfForm = Int32.Parse(Console.ReadLine());
+                    UserInterfaceHelpers.checkTheCorrectInputNumberOfForm(numberOfForm, Config.NumberOfForms);
+                    UserInterfaceHelpers.checkIfWantToExitTheProgram(numberOfForm);    
+                    
+                    UserModule.searchNumbersInArea(formToSearch, numberOfForm, numberOfWay);
+                }
+
+                if (formToSearch.getTypeOfNumberArrayElemens() == false)
+                {
+                    if (numberOfWay != (int)WaysToSearch.FindSymbol)
+                    {
+                        Console.WriteLine("!!!.Please, use this way only for symbol array values.");
+                        return;
+                    }
+                    Console.WriteLine("Please, choose form to search elements(from 1 to 14) or \"500\" to finish program: ");
                     int numberOfForm = Int32.Parse(Console.ReadLine());
                     UserInterfaceHelpers.checkTheCorrectInputNumberOfForm(numberOfForm, Config.NumberOfForms);
                     UserInterfaceHelpers.checkIfWantToExitTheProgram(numberOfForm);
 
-                    switch (numberOfForm)
-                    {
-                        case (int) NumberOfForms.FirstForm:
-                        {
-                            switch (numberOfWay)
-                            {
-                                case (int)WaysToSearch.FindSymbol:
-                                {
-                                    char symbolToFind = UserInterfaceHelpers.getSymbolFromConsole();
-                                    bool statusOfSearching = SearchSymbols.findSymbolInTheAreaOfFirstForm(formToSearch, symbolToFind);
-                                    UserInterfaceHelpers.showFindedSymbol(statusOfSearching);
-                                }break;
-
-                                case (int) WaysToSearch.FindMaxElement:
-                                {
-                                    char findedMaxElement = SearchNumbers.findMaxNumberInTheAreaOfFirstForm(formToSearch);
-                                    UserInterfaceHelpers.showFindedMaxElement(findedMaxElement);
-                                }break;
-
-                                case (int) WaysToSearch.FindMinElement:
-                                {
-                                    char findedMinElement = SearchNumbers.findMinNumberInTheAreaOfFirstForm(formToSearch);
-                                    UserInterfaceHelpers.showFindedMinElement(findedMinElement);
-                                }break;
-                            }
-                        }break;
-                            
-                        case (int) NumberOfForms.SecondForm:
-                        {
-                            
-                        }
-                        case (int) NumberOfForms.ThirdForm:
-                        {
-                            
-                        }
-                        case (int) NumberOfForms.FourthForm:
-                        {
-                            
-                        }
-                        case (int) NumberOfForms.FifthForm:
-                        {
-                            
-                        }
-                        case (int) NumberOfForms.SixthForm:
-                        {
-                            
-                        }
-                        case (int) NumberOfForms.SeventhForm:
-                        {
-                            
-                        }
-                        case (int) NumberOfForms.EighthForm:
-                        {
-                            
-                        }
-                        case (int) NumberOfForms.NinthForm:
-                        {
-                            
-                        }
-                        case (int) NumberOfForms.TenthForm:
-                        {
-                            
-                        }
-                        case (int) NumberOfForms.EleventhForm:
-                        {
-                            
-                        }
-                        case (int) NumberOfForms.TwelfthForm:
-                        {
-                            
-                        }
-                        case (int) NumberOfForms.ThirteenthForm:
-                        {
-                            
-                        }
-                        case (int) NumberOfForms.FourteenthForm:
-                        {
-                            
-                        }
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("Please, use this way only for number array values.");
-                    return;
+                    UserModule.searchSymbolsInArea(formToSearch, numberOfForm);
                 }
             }
 
@@ -117,17 +55,37 @@ namespace CSCourseLab3
         public static void rewriteElementsToAnotherArea(Shapes formToRewrite)
         {
             
-            if (formToRewrite.getNumberOfForms() == NumberOfForms.FifthForm ||
+            if (formToRewrite.getNumberOfForms() == NumberOfForms.FirstForm ||
                 formToRewrite.getNumberOfForms() == NumberOfForms.SecondForm ||
                 formToRewrite.getNumberOfForms() == NumberOfForms.ThirdForm ||
                 formToRewrite.getNumberOfForms() == NumberOfForms.FourthForm)
             {
                 Console.WriteLine("Please, choose one of forms(from 1 to 4)to rewrite in:");
                 int numberOfForm = Int32.Parse(Console.ReadLine());
-                if (UserInterfaceHelpers.checkTheCorrectInputNumberOfForm(numberOfForm, Config.NumberOfFormsForFirstShapeType))
-                {
-                    
-                }
+                UserModule.rewriteMethodForFirstShapeType(formToRewrite, numberOfForm);
+            }
+            else if (formToRewrite.getNumberOfForms() == NumberOfForms.FifthForm ||
+                     formToRewrite.getNumberOfForms() == NumberOfForms.SixthForm)
+            {
+                Console.WriteLine("Please, choose one of forms(from 5 to 6)to rewrite in:");
+                int numberOfForm = Int32.Parse(Console.ReadLine());
+                UserModule.rewriteMethodForSecondShapeType(formToRewrite, numberOfForm);
+                
+            }
+            else if (formToRewrite.getNumberOfForms() == NumberOfForms.SeventhForm ||
+                     formToRewrite.getNumberOfForms() == NumberOfForms.EighthForm ||
+                     formToRewrite.getNumberOfForms() == NumberOfForms.NinthForm ||
+                     formToRewrite.getNumberOfForms() == NumberOfForms.TenthForm)
+            {
+                Console.WriteLine("Please, choose one of forms(from 7 to 10)to rewrite in:");
+                int numberOfForm = Int32.Parse(Console.ReadLine());
+                UserModule.rewriteMethodForThirdShapeType(formToRewrite, numberOfForm);
+            }
+            else 
+            {
+                Console.WriteLine("Please, choose one of forms(from 11 to 14)to rewrite in:");
+                int numberOfForm = Int32.Parse(Console.ReadLine());
+                
             }
         }
     }

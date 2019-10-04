@@ -88,7 +88,7 @@ namespace CSCourseLab3.Forms
                     if (j < _arrayForShape.GetLength(1) && j >= i ||
                         j <= i && j > _arrayForShape.GetLength(1) - i - 2 )
                     {
-                        _arrayForShape[i, j] = random.Next(Config.StartingUnicodeForEnglishAlphabet, Config.StartingUnicodeForEnglishAlphabet);
+                        _arrayForShape[i, j] = random.Next(Config.StartingUnicodeForEnglishAlphabet, Config.FinishingUnicodeForEnglishAlphabet);
                     }
                     else
                     {

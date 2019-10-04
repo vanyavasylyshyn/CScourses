@@ -2,7 +2,7 @@ namespace CSCourseLab3
 {
     public partial class SearchNumbers
     {
-        public static char findMinNumberInTheAreaOfFirstForm(Shapes objectWithArray)
+        public static int findMinNumberInTheAreaOfFirstForm(Shapes objectWithArray)
         {
             byte counterForCreatingFirstElement = 0;
             int minElement = 0;
@@ -30,10 +30,10 @@ namespace CSCourseLab3
                 }
             }
 
-            return (char)minElement;
+            return minElement;
         }
         
-        public static char findMinNumberInTheAreaOfSecondForm(Shapes objectWithArray)
+        public static int findMinNumberInTheAreaOfSecondForm(Shapes objectWithArray)
         {
             byte counterForCreatingFirstElement = 0;
             int minElement = 0;
@@ -62,10 +62,10 @@ namespace CSCourseLab3
                 }
             }
             
-            return (char)minElement;
+            return minElement;
         }
         
-        public static char findMinNumberInTheAreaOfThirdForm(Shapes objectWithArray)
+        public static int findMinNumberInTheAreaOfThirdForm(Shapes objectWithArray)
         {
             byte counterForCreatingFirstElement = 0;
             int minElement = 0;
@@ -94,10 +94,10 @@ namespace CSCourseLab3
                 }
             }
 
-            return (char)minElement;
+            return minElement;
         }
         
-        public static char findMinNumberInTheAreaOfFourthForm(Shapes objectWithArray)
+        public static int findMinNumberInTheAreaOfFourthForm(Shapes objectWithArray)
         {
             byte counterForCreatingFirstElement = 0;
             int minElement = 0;
@@ -126,10 +126,10 @@ namespace CSCourseLab3
                 }
             }
 
-            return (char)minElement;
+            return minElement;
         }
         
-        public static char findMinNumberInTheAreaOfFifthForm(Shapes objectWithArray)
+        public static int findMinNumberInTheAreaOfFifthForm(Shapes objectWithArray)
         {
             byte counterForCreatingFirstElement = 0;
             int minElement = 0;
@@ -159,10 +159,10 @@ namespace CSCourseLab3
                 }
             }
 
-            return (char)minElement;
+            return minElement;
         }
         
-        public static char findMinNumberInTheAreaOfSixthForm(Shapes objectWithArray)
+        public static int findMinNumberInTheAreaOfSixthForm(Shapes objectWithArray)
         {
             byte counterForCreatingFirstElement = 0;
             int minElement = 0;
@@ -192,10 +192,10 @@ namespace CSCourseLab3
                 }
             }
 
-            return (char)minElement;
+            return minElement;
         }
         
-        public static char findMinNumberInTheAreaOfSeventhForm(Shapes objectWithArray)
+        public static int findMinNumberInTheAreaOfSeventhForm(Shapes objectWithArray)
         {
             byte counterForCreatingFirstElement = 0;
             int minElement = 0;
@@ -225,10 +225,10 @@ namespace CSCourseLab3
                 }
             }
             
-            return (char)minElement;
+            return minElement;
         }
         
-        public static char findMinNumberInTheAreaOfEigthtForm(Shapes objectWithArray)
+        public static int findMinNumberInTheAreaOfEigthtForm(Shapes objectWithArray)
         {
             byte counterForCreatingFirstElement = 0;
             int minElement = 0;
@@ -257,10 +257,10 @@ namespace CSCourseLab3
                 }
             }
 
-            return (char)minElement;
+            return minElement;
         }
         
-        public static char findMinNumberInTheAreaOfNingthForm(Shapes objectWithArray)
+        public static int findMinNumberInTheAreaOfNingthForm(Shapes objectWithArray)
         {
             byte counterForCreatingFirstElement = 0;
             int minElement = 0;
@@ -289,10 +289,10 @@ namespace CSCourseLab3
                 }
             }
             
-            return (char)minElement;
+            return minElement;
         }
         
-        public static char findMinNumberInTheAreaOfTenthForm(Shapes objectWithArray)
+        public static int findMinNumberInTheAreaOfTenthForm(Shapes objectWithArray)
         {
             byte counterForCreatingFirstElement = 0;
             int minElement = 0;
@@ -321,10 +321,10 @@ namespace CSCourseLab3
                 }
             }
 
-            return (char)minElement;
+            return minElement;
         }
         
-        public static char findMinNumberInTheAreaOfEleventhForm(Shapes objectWithArray)
+        public static int findMinNumberInTheAreaOfEleventhForm(Shapes objectWithArray)
         {
             byte counterForCreatingFirstElement = 0;
             int minElement = 0;
@@ -353,10 +353,10 @@ namespace CSCourseLab3
                 }
             }
 
-            return (char)minElement;
+            return minElement;
         }
         
-        public static char findMinNumberInTheAreaOfTwelfthForm(Shapes objectWithArray)
+        public static int findMinNumberInTheAreaOfTwelfthForm(Shapes objectWithArray)
         {
             byte counterForCreatingFirstElement = 0;
             int minElement = 0;
@@ -386,10 +386,10 @@ namespace CSCourseLab3
                 }
             }
 
-            return (char)minElement;
+            return minElement;
         }
         
-        public static char findMinNumberInTheAreaOfThirteenthForm(Shapes objectWithArray)
+        public static int findMinNumberInTheAreaOfThirteenthForm(Shapes objectWithArray)
         {
             byte counterForCreatingFirstElement = 0;
             int minElement = 0;
@@ -418,10 +418,10 @@ namespace CSCourseLab3
                 }
             }
 
-            return (char)minElement;
+            return minElement;
         }
         
-        public static char findMinNumberInTheAreaOfFourteenthForm(Shapes objectWithArray)
+        public static int findMinNumberInTheAreaOfFourteenthForm(Shapes objectWithArray)
         {
             byte counterForCreatingFirstElement = 0;
             int minElement = 0;
@@ -450,7 +450,7 @@ namespace CSCourseLab3
                 }
             }
             
-            return (char)minElement;
+            return minElement;
         }
     }
 }

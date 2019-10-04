@@ -14,7 +14,12 @@ namespace CSCourseLab3
         public abstract void generateElementsOfArrayByAnySymbols();
         public abstract void generateElementsOfArrayByEnglishAlphabetSymbols();
 
-        public bool getTypeOfNumberArrayElemens()
+        public void setTypeOfForm(NumberOfForms type)
+        {
+            _typeOfForm = type;
+        }
+            
+            public bool getTypeOfNumberArrayElemens()
         {
             return _typeOfNumberArrayElements;
         }
@@ -95,6 +100,5 @@ namespace CSCourseLab3
                 }
             }
         }
-        //TODO переписати елементи з одної області в іншу
     }
 }

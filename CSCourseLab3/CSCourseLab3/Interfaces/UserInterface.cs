@@ -173,7 +173,6 @@ namespace CSCourseLab3
                         case (int)NumberOfActions.SearchInArray:
                         {
                             UserInterfaceController.searchInArea(formForAction);
-                        //TODO перевірку чи числовий арей чи ні і яку хоче область
                         }break;
                     
                         case (int)NumberOfActions.TransposeeArray:

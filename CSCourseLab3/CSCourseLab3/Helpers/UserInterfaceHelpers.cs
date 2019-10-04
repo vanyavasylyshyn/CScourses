@@ -9,13 +9,13 @@ namespace CSCourseLab3.Forms
         {
             if (input < 1 || input > finishRangeOfChecking)
             {
-                Console.WriteLine("Please, enter correct number of form(from 1 to 14) or zero to finish program.");
+                Console.WriteLine("Please, enter correct number of form(from 1 to 14) or \"500\" to finish program.");
                 return false;
             }
 
             return true;
         }
-
+        
         public static void checkIfWantToExitTheProgram(int statusNumber)
         {
             if (statusNumber == 500)
@@ -36,12 +36,12 @@ namespace CSCourseLab3.Forms
             Console.WriteLine($"Status of searching: {statusOfSearching}");
         }
 
-        public static void showFindedMaxElement(char findedMaxElement)
+        public static void showFindedMaxElement(int findedMaxElement)
         {
             Console.WriteLine($"Finded max element: {findedMaxElement}");
         }
         
-        public static void showFindedMinElement(char findedMaxElement)
+        public static void showFindedMinElement(int findedMaxElement)
         {
             Console.WriteLine($"Finded min element: {findedMaxElement}");
         }

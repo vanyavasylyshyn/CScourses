@@ -1,6 +1,6 @@
 namespace CSCourseLab3
 {
-    public class Config
+    public partial class Config
     {
         public const int MinRandomElement = -10;
         public const int MaxRandomElement = 10;
@@ -15,12 +15,7 @@ namespace CSCourseLab3
         public const int NumberOfWaysToGenerateElements = 4;
         public const int NumberOfActions = 4;
         public const int NumberOfWaysToSearch = 3;
-
-        public const int NumberOfFormsForFirstShapeType = 4;
-        public const int NumberOfFormsForSecndShapeType = 2;
-        public const int NumberOfFormsForThirdShapeType = 4;
-        public const int NumberOfFormsForFourthShapeType = 4;
-
+        
         public const int NumberOfTypeOfNumbers = 2;
     }
 }
