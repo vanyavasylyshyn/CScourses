@@ -101,7 +101,7 @@ namespace CSCourseLab3
             {
                 Console.WriteLine("Please, choose way to generate elements(from 1 to 4) or \"500\" to finish program: \n" +
                                   "1.By random numbers.\n" +
-                                  "2.By numbers in range.\n" +
+                                  "2.By pair/odd numbers in range.\n" +
                                   "3.By any symbols.\n" +
                                   "4.By english alphabet symbols.");
                 int numberOfWay = Int32.Parse(Console.ReadLine());
