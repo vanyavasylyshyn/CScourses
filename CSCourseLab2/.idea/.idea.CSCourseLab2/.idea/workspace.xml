@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89372795-b2cc-4f03-b0ee-88ca02ee53a6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/CSCourseLab2/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CSCourseLab2/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSCourseLab2/bin/Debug/netcoreapp2.2/CSCourseLab2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CSCourseLab2/bin/Debug/netcoreapp2.2/CSCourseLab2.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSCourseLab2/bin/Debug/netcoreapp2.2/CSCourseLab2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CSCourseLab2/bin/Debug/netcoreapp2.2/CSCourseLab2.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSCourseLab2/obj/Debug/netcoreapp2.2/CSCourseLab2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CSCourseLab2/obj/Debug/netcoreapp2.2/CSCourseLab2.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSCourseLab2/obj/Debug/netcoreapp2.2/CSCourseLab2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CSCourseLab2/obj/Debug/netcoreapp2.2/CSCourseLab2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSCourseLab1/.idea/.idea.CSCourseLab1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CSCourseLab1/.idea/.idea.CSCourseLab1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CSCourseLab2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CSCourseLab2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSCourseLab3/CSCourseLab3/bin/Debug/netcoreapp2.2/CSCourseLab3.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../CSCourseLab3/CSCourseLab3/bin/Debug/netcoreapp2.2/CSCourseLab3.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSCourseLab3/CSCourseLab3/bin/Debug/netcoreapp2.2/CSCourseLab3.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../CSCourseLab3/CSCourseLab3/bin/Debug/netcoreapp2.2/CSCourseLab3.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSCourseLab3/CSCourseLab3/obj/Debug/netcoreapp2.2/CSCourseLab3.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../CSCourseLab3/CSCourseLab3/obj/Debug/netcoreapp2.2/CSCourseLab3.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSCourseLab3/CSCourseLab3/obj/Debug/netcoreapp2.2/CSCourseLab3.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../CSCourseLab3/CSCourseLab3/obj/Debug/netcoreapp2.2/CSCourseLab3.pdb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,6 +77,7 @@
       <workItem from="1569522427783" duration="45000" />
       <workItem from="1569522484184" duration="92000" />
       <workItem from="1569781567184" duration="689000" />
+      <workItem from="1570457303848" duration="394000" />
     </task>
     <servers />
   </component>
