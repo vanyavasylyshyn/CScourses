@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="CScourseLab4" t="IncludeRecursive">
+        <e p="AccessRights.cs" t="Include" />
+        <e p="ApplicationToWorkOffer.cs" t="Include" />
+        <e p="AuthenticationClases" t="Include">
+          <e p="Authentication.cs" t="Include" />
+          <e p="AuthenticationHelper.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="City.cs" t="Include" />
+        <e p="ConstructionWork.cs" t="Include" />
+        <e p="ConstructionWorkType.cs" t="Include" />
+        <e p="CScourseLab4.csproj" t="IncludeRecursive" />
+        <e p="Interface" t="Include">
+          <e p="Interface.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="CScourseLab4.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Storage" t="Include">
+          <e p="UserStorage.cs" t="Include" />
+        </e>
+        <e p="Users" t="Include">
+          <e p="Administrator.cs" t="Include" />
+          <e p="Contractor.cs" t="Include" />
+          <e p="Customer.cs" t="Include" />
+          <e p="User.cs" t="Include" />
+        </e>
+        <e p="WorkOffer.cs" t="Include" />
+        <e p="WorkOfferStatus.cs" t="Include" />
+      </e>
+      <e p="CScourseLab4.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_CScourseLab4.1037237273.00" t="ExcludeRecursive" />
+  </component>
+</project>

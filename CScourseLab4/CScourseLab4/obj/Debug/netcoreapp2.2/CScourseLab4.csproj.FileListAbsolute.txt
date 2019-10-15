@@ -1,0 +1,22 @@
+/Users/Shared/ООП/CScourseLab4/CScourseLab4/bin/Debug/netcoreapp2.2/CScourseLab4.deps.json
+/Users/Shared/ООП/CScourseLab4/CScourseLab4/bin/Debug/netcoreapp2.2/CScourseLab4.runtimeconfig.json
+/Users/Shared/ООП/CScourseLab4/CScourseLab4/bin/Debug/netcoreapp2.2/CScourseLab4.runtimeconfig.dev.json
+/Users/Shared/ООП/CScourseLab4/CScourseLab4/bin/Debug/netcoreapp2.2/CScourseLab4.dll
+/Users/Shared/ООП/CScourseLab4/CScourseLab4/bin/Debug/netcoreapp2.2/CScourseLab4.pdb
+/Users/Shared/ООП/CScourseLab4/CScourseLab4/obj/Debug/netcoreapp2.2/CScourseLab4.csprojAssemblyReference.cache
+/Users/Shared/ООП/CScourseLab4/CScourseLab4/obj/Debug/netcoreapp2.2/CScourseLab4.csproj.CoreCompileInputs.cache
+/Users/Shared/ООП/CScourseLab4/CScourseLab4/obj/Debug/netcoreapp2.2/CScourseLab4.AssemblyInfoInputs.cache
+/Users/Shared/ООП/CScourseLab4/CScourseLab4/obj/Debug/netcoreapp2.2/CScourseLab4.AssemblyInfo.cs
+/Users/Shared/ООП/CScourseLab4/CScourseLab4/obj/Debug/netcoreapp2.2/CScourseLab4.dll
+/Users/Shared/ООП/CScourseLab4/CScourseLab4/obj/Debug/netcoreapp2.2/CScourseLab4.pdb
+/Users/Vanya/C# Course Labs/CScourseLab4/CScourseLab4/bin/Debug/netcoreapp2.2/CScourseLab4.deps.json
+/Users/Vanya/C# Course Labs/CScourseLab4/CScourseLab4/bin/Debug/netcoreapp2.2/CScourseLab4.runtimeconfig.json
+/Users/Vanya/C# Course Labs/CScourseLab4/CScourseLab4/bin/Debug/netcoreapp2.2/CScourseLab4.runtimeconfig.dev.json
+/Users/Vanya/C# Course Labs/CScourseLab4/CScourseLab4/bin/Debug/netcoreapp2.2/CScourseLab4.dll
+/Users/Vanya/C# Course Labs/CScourseLab4/CScourseLab4/bin/Debug/netcoreapp2.2/CScourseLab4.pdb
+/Users/Vanya/C# Course Labs/CScourseLab4/CScourseLab4/obj/Debug/netcoreapp2.2/CScourseLab4.csprojAssemblyReference.cache
+/Users/Vanya/C# Course Labs/CScourseLab4/CScourseLab4/obj/Debug/netcoreapp2.2/CScourseLab4.csproj.CoreCompileInputs.cache
+/Users/Vanya/C# Course Labs/CScourseLab4/CScourseLab4/obj/Debug/netcoreapp2.2/CScourseLab4.AssemblyInfoInputs.cache
+/Users/Vanya/C# Course Labs/CScourseLab4/CScourseLab4/obj/Debug/netcoreapp2.2/CScourseLab4.AssemblyInfo.cs
+/Users/Vanya/C# Course Labs/CScourseLab4/CScourseLab4/obj/Debug/netcoreapp2.2/CScourseLab4.dll
+/Users/Vanya/C# Course Labs/CScourseLab4/CScourseLab4/obj/Debug/netcoreapp2.2/CScourseLab4.pdb
