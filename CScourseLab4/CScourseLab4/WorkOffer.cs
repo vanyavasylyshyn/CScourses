@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace CScourseLab4
 {
     /// <summary>
@@ -6,14 +8,46 @@ namespace CScourseLab4
     public class WorkOffer
     {
         private string _name;
+        public string _Name
+        {
+            get => _name;
+            set => _name = value;
+        }
+        
         private string _shortDescription;
+        public string _ShortDecription
+        {
+            set => _shortDescription = value;
+        }
+        
         private int _estimate;
-        private WorkOfferStatus _workOfferStatus;
+        public int _Estimate
+        {
+            set => _estimate = value;
+        }
+        
         private Administrator _administrator;
+        public Administrator _Administrator
+        {
+            set => _administrator = value;
+        }
+        
         private Customer _customer;
-        private City _city;
-        private ApplicationToWorkOffer[] _applicationToWorkOffe;
-        private string _street;
-        private byte _houseNumber;
+        public Customer _Customer
+        {
+            get => _customer;
+            set => _customer = value;
+        }
+        
+        
+        private ApplicationToWorkOffer _currentContractor;
+
+        public ApplicationToWorkOffer _CurrentContractor
+        {
+            set => _currentContractor = value;
+        }
+        
+        private ConstructionWork[] _constructionWorks;
+        private WorkOfferStatus _workOfferStatus = WorkOfferStatus.Opened;
     }
 }

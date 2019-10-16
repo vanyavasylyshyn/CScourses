@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace CScourseLab4
 {
@@ -7,6 +8,8 @@ namespace CScourseLab4
         static void Main(string[] args)
         {
             User user = Interface.ChooseFirstAction();
+            Interface.MainMenu(user);
+            
         }
     }
 }

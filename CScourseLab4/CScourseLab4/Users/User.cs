@@ -5,12 +5,14 @@ namespace CScourseLab4
         protected string _name;
         public string _Name
         {
+            get => _name;
             set => _name = value;
         }
         
         protected string _surname;
         public string _Surname
         {
+            get => _surname;
             set => _surname = value;
         }
         

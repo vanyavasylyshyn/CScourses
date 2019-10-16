@@ -6,8 +6,18 @@ namespace CScourseLab4
     public class ApplicationToWorkOffer
     {
         private int _payment;
-        private Contractor _contractor;
         private bool _status;
-        private ConstructionWork[] _constructionWorks;
+
+        private Contractor _contractor;
+        public Contractor _Contractor
+        {
+            get => _contractor;
+        }
+        
+        private WorkOffer _workOffer;
+        public WorkOffer _WorkOffer
+        {
+            get => _workOffer;
+        }
     }
 }

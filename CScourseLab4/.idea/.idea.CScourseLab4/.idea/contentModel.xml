@@ -5,17 +5,20 @@
       <e p="CScourseLab4" t="IncludeRecursive">
         <e p="AccessRights.cs" t="Include" />
         <e p="ApplicationToWorkOffer.cs" t="Include" />
-        <e p="AuthenticationClases" t="Include">
+        <e p="Authentication" t="Include">
           <e p="Authentication.cs" t="Include" />
           <e p="AuthenticationHelper.cs" t="Include" />
         </e>
         <e p="bin" t="ExcludeRecursive" />
-        <e p="City.cs" t="Include" />
         <e p="ConstructionWork.cs" t="Include" />
         <e p="ConstructionWorkType.cs" t="Include" />
         <e p="CScourseLab4.csproj" t="IncludeRecursive" />
         <e p="Interface" t="Include">
           <e p="Interface.cs" t="Include" />
+        </e>
+        <e p="Menu" t="Include">
+          <e p="MainMenuClass.cs" t="Include" />
+          <e p="MainMenuHelper.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -26,7 +29,9 @@
         </e>
         <e p="Program.cs" t="Include" />
         <e p="Storage" t="Include">
+          <e p="ApplicationsToWorkOfferStorage.cs" t="Include" />
           <e p="UserStorage.cs" t="Include" />
+          <e p="WorkOffersStorage.cs" t="Include" />
         </e>
         <e p="Users" t="Include">
           <e p="Administrator.cs" t="Include" />

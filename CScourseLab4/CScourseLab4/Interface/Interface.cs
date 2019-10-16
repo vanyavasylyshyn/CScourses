@@ -45,5 +45,36 @@ namespace CScourseLab4
 
             return user;
         }
+
+        public static void MainMenu(User user)
+        {
+            Console.WriteLine($"Hi, {user._Name} {user._Surname}, please choose some action: ");
+            
+            if (user.GetType() == typeof(Customer))
+            {
+                Console.WriteLine("1.Create work offer.\n" +
+                                  "2.Show my work offers.\n" +
+                                  "3.Choose work offer.\n" +
+                                  "4.Log out.");
+
+                char choosenAction = Char.Parse(Console.ReadLine());
+                
+                MainMenuClass.CompleteActionForCustomer(user, choosenAction);
+            }
+            else if (user.GetType() == typeof(Administrator))
+            {
+                //TODO menu
+                char choosenAction = Char.Parse(Console.ReadLine());
+                
+                MainMenuClass.CompleteActionForAdministrator(user, choosenAction);
+            }
+            else if(user.GetType() == typeof(Contractor))
+            {
+                //TODO menu
+                char choosenAction = Char.Parse(Console.ReadLine());
+                
+                MainMenuClass.CompleteActionForContractor(user, choosenAction);
+            }
+        }
     }
 }
