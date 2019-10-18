@@ -4,6 +4,10 @@ namespace CScourseLab4
 {
     public static class AuthenticationHelper
     {
+        /// <summary>
+        /// Method used for filling user object by entered information.
+        /// </summary>
+        /// <param name="user"></param>
         public static void FillUserInformation(User user)
         {
             Console.WriteLine("Please, enter name:");
@@ -34,32 +38,22 @@ namespace CScourseLab4
             }
         }
 
+        /// <summary>
+        /// Method used for checking login and password.
+        /// </summary>
+        /// <param name="enteredLogin"></param>
+        /// <param name="enteredPassword"></param>
+        /// <returns>Logged in user object</returns>
         public static User AuthorizateUser( string enteredLogin, string enteredPassword)
         {
             User user = null;
-            
-            if (UserStorage._Users.Find(x => (x._Login == enteredLogin &&
-                                              x._Password == enteredPassword)).GetType() == typeof(Contractor))
+
+            if (UserStorage._Users.Exists(x => (x._Login == enteredLogin &&
+                                              x._Password == enteredPassword)))
             {
                 user = UserStorage._Users.Find(x => (x._Login == enteredLogin &&
-                                                          x._Password == enteredPassword));
-                
-                Console.WriteLine("Log in successful!!");
-            }
-            else if(UserStorage._Users.Find(x => (x._Login == enteredLogin &&
-                                                  x._Password == enteredPassword)).GetType() == typeof(Administrator))
-            {
-                user = UserStorage._Users.Find(x => (x._Login == enteredLogin &&
-                                                          x._Password == enteredPassword));
-                
-                Console.WriteLine("Log in successful!!");
-            }
-            else if (UserStorage._Users.Find(x => (x._Login == enteredLogin &&
-                                                   x._Password == enteredPassword)).GetType() == typeof(Customer))
-            {
-                user = UserStorage._Users.Find(x => (x._Login == enteredLogin &&
-                                                          x._Password == enteredPassword));
-                
+                                                     x._Password == enteredPassword));
+
                 Console.WriteLine("Log in successful!!");
             }
             else

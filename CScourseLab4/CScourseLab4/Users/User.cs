@@ -1,3 +1,5 @@
+using System;
+
 namespace CScourseLab4
 {
     public abstract class User
@@ -46,6 +48,16 @@ namespace CScourseLab4
         public AccessRights _AccessRights
         {
             set => _accessRights = value;
+        }
+
+        public virtual void ShowInformation()
+        {
+            Console.WriteLine("Information about user:\n" +
+                              $"Name: {_name};" +
+                              $"Surname: {_surname};" +
+                              $"Phone number: {_phoneNumber};" +
+                              $"Email: {_email};" +
+                              $"Access rights: {_accessRights}");
         }
     }
 }

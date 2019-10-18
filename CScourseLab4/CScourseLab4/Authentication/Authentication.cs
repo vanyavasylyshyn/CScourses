@@ -3,8 +3,14 @@ using System.Linq;
 
 namespace CScourseLab4
 {
+    /// <summary>
+    /// Class used for authentication user in system.
+    /// </summary>
     public class Authentication
     {
+        /// <summary>
+        /// Method used for registration users in system.
+        /// </summary>
         public static void Registration()
         {
             try
@@ -57,6 +63,11 @@ namespace CScourseLab4
             }
         }
 
+        
+        /// <summary>
+        /// Method used for log in user in system.
+        /// </summary>
+        /// <returns>Logged in user object</returns>
         public static User Authorization()
         {
             try
@@ -74,6 +85,11 @@ namespace CScourseLab4
                 Console.WriteLine(e);
                 throw;
             }
+        }
+
+        public static void LogOut()
+        {
+            Console.WriteLine("Log out successful. Bye bye!");
         }
     }
 }

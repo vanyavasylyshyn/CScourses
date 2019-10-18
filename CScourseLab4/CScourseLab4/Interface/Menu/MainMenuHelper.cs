@@ -11,10 +11,11 @@ namespace CScourseLab4
             {
                 case '1':
                 {
-                    List<ApplicationToWorkOffer> applicationsToWorkOffer = ApplicationsToWorkOfferStorage.GetApplicationsToWorkOffer(workOffer);
+                    List<ApplicationToWorkOffer> applicationsToWorkOffer = workOffer._ApplicationToWorkOffers;
+                    
                     foreach (ApplicationToWorkOffer application in applicationsToWorkOffer)
                     {
-                        Console.WriteLine($"{application};");
+                        application.ShowApplicationInformation();
                     }
                 }
                     break;
@@ -24,9 +25,22 @@ namespace CScourseLab4
                     Console.WriteLine("Please, enter contractor name:");
                     string enteredContractorName = Console.ReadLine();
                     
-                    customer.ConfirmApplicationToWorkOffer(workOffer, enteredContractorName);
+                    Console.WriteLine("Please, enter contractor surname:");
+                    string enteredContractorSurname = Console.ReadLine();
+                    
+                    customer.ConfirmApplicationToWorkOffer(workOffer, enteredContractorName, enteredContractorSurname);
                 }
                     break;
+            }
+        }
+
+        public static void ShowWorkOffers()
+        {
+            List<WorkOffer> workOffers = WorkOffersStorage.GetWorkOffers();
+
+            foreach (WorkOffer offer in workOffers)
+            {
+                offer.ShowWorkOfferInformation();
             }
         }
     }

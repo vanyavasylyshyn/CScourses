@@ -7,9 +7,11 @@ namespace CScourseLab4
     {
         static void Main(string[] args)
         {
-            User user = Interface.ChooseFirstAction();
-            Interface.MainMenu(user);
-            
+            while (true)
+            {
+                User user = Interface.ChooseFirstAction();
+                Interface.MainMenu(user);   
+            }
         }
     }
 }

@@ -2,8 +2,15 @@ using System;
 
 namespace CScourseLab4
 {
+    /// <summary>
+    /// This class used for showing interface for user.
+    /// </summary>
     public class Interface
     {
+        /// <summary>
+        /// Method used for showing first menu for user.
+        /// </summary>
+        /// <returns>Logged in user object</returns>
         public static User ChooseFirstAction()
         {
             User user = null;
@@ -46,34 +53,63 @@ namespace CScourseLab4
             return user;
         }
 
+        /// <summary>
+        /// Method used for showing main many for every type of user.
+        /// </summary>
+        /// <param name="user"></param>
         public static void MainMenu(User user)
         {
             Console.WriteLine($"Hi, {user._Name} {user._Surname}, please choose some action: ");
-            
-            if (user.GetType() == typeof(Customer))
+            while (true)
             {
-                Console.WriteLine("1.Create work offer.\n" +
-                                  "2.Show my work offers.\n" +
-                                  "3.Choose work offer.\n" +
-                                  "4.Log out.");
+                if (user is Customer)
+                {
+                    Console.WriteLine("1.Create work offer.\n" +
+                                      "2.Show my work offers.\n" +
+                                      "3.Choose work offer.\n" +
+                                      "4.Log out.");
 
-                char choosenAction = Char.Parse(Console.ReadLine());
+                    char choosenAction = Char.Parse(Console.ReadLine());
                 
-                MainMenuClass.CompleteActionForCustomer(user, choosenAction);
-            }
-            else if (user.GetType() == typeof(Administrator))
-            {
-                //TODO menu
-                char choosenAction = Char.Parse(Console.ReadLine());
+                    bool userStatus = MainMenuInterface.CompleteActionForCustomer(user, choosenAction);
+                    if (!userStatus)
+                    {
+                        break;
+                    }
+                    
+                }
+                else if (user is Administrator)
+                {
+                    Console.WriteLine("1.Show unverified contractors.\n" +
+                                      "2.Verify contractor.\n" +
+                                      "3.Show work offers.\n" +
+                                      "4.Close work offer.\n" +
+                                      "5.Log out.");
+                    
+                    char choosenAction = Char.Parse(Console.ReadLine());
                 
-                MainMenuClass.CompleteActionForAdministrator(user, choosenAction);
-            }
-            else if(user.GetType() == typeof(Contractor))
-            {
-                //TODO menu
-                char choosenAction = Char.Parse(Console.ReadLine());
+                    bool userStatus = MainMenuInterface.CompleteActionForAdministrator(user, choosenAction);
+                    if (!userStatus)
+                    {
+                        break;
+                    }
+                }
+                else if(user is Contractor)
+                {
+                    Console.WriteLine("1.Show open work offers\n" +
+                                      "2.Create application to work offer\n" +
+                                      "3.Show my active work offers.\n" +
+                                      "4.Check up construction work\n" +
+                                      "5.Log out.");
+                    
+                    char choosenAction = Char.Parse(Console.ReadLine());
                 
-                MainMenuClass.CompleteActionForContractor(user, choosenAction);
+                    bool userStatus = MainMenuInterface.CompleteActionForContractor(user, choosenAction);
+                    if (!userStatus)
+                    {
+                        break;
+                    }
+                }   
             }
         }
     }

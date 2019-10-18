@@ -3,22 +3,25 @@
   <component name="ContentModelStore">
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="CScourseLab4" t="IncludeRecursive">
-        <e p="AccessRights.cs" t="Include" />
-        <e p="ApplicationToWorkOffer.cs" t="Include" />
         <e p="Authentication" t="Include">
           <e p="Authentication.cs" t="Include" />
           <e p="AuthenticationHelper.cs" t="Include" />
         </e>
         <e p="bin" t="ExcludeRecursive" />
-        <e p="ConstructionWork.cs" t="Include" />
-        <e p="ConstructionWorkType.cs" t="Include" />
+        <e p="Constants" t="Include">
+          <e p="Constants.cs" t="Include" />
+        </e>
         <e p="CScourseLab4.csproj" t="IncludeRecursive" />
+        <e p="Enums" t="Include">
+          <e p="AccessRights.cs" t="Include" />
+          <e p="WorkOfferStatus.cs" t="Include" />
+        </e>
         <e p="Interface" t="Include">
           <e p="Interface.cs" t="Include" />
-        </e>
-        <e p="Menu" t="Include">
-          <e p="MainMenuClass.cs" t="Include" />
-          <e p="MainMenuHelper.cs" t="Include" />
+          <e p="Menu" t="Include">
+            <e p="MainMenuClass.cs" t="Include" />
+            <e p="MainMenuHelper.cs" t="Include" />
+          </e>
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -29,7 +32,6 @@
         </e>
         <e p="Program.cs" t="Include" />
         <e p="Storage" t="Include">
-          <e p="ApplicationsToWorkOfferStorage.cs" t="Include" />
           <e p="UserStorage.cs" t="Include" />
           <e p="WorkOffersStorage.cs" t="Include" />
         </e>
@@ -39,8 +41,11 @@
           <e p="Customer.cs" t="Include" />
           <e p="User.cs" t="Include" />
         </e>
-        <e p="WorkOffer.cs" t="Include" />
-        <e p="WorkOfferStatus.cs" t="Include" />
+        <e p="WorkClases" t="Include">
+          <e p="ApplicationToWorkOffer.cs" t="Include" />
+          <e p="ConstructionWork.cs" t="Include" />
+          <e p="WorkOffer.cs" t="Include" />
+        </e>
       </e>
       <e p="CScourseLab4.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
